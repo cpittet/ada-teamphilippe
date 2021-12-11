@@ -43,8 +43,8 @@ of authors. The study of the polarity of the opinions of each of these groups wi
 potentially identify specific types of people that are a good indicators of the success of Mark Zuckerberg. 
 
 ## Data and Methods
-We use a subset of the (QuoteBank dataset)[https://dlab.epfl.ch/people/west/pub/Vaucher-Spitz-Catasta-West_WSDM-21.pdf]
+We use a subset of the [QuoteBank dataset](https://dlab.epfl.ch/people/west/pub/Vaucher-Spitz-Catasta-West_WSDM-21.pdf)
 which contains quotes made in English-speaking news articles published between 2015 and 2020. To measure the success
-of Mark Zuckerberg, we use the stock price of his company Meta on the (Nasdaq Stock Market)[https://www.nasdaq.com/market-activity/stocks/fb/historical].
+of Mark Zuckerberg, we use the stock price of his company Meta on the [Nasdaq Stock Market](https://www.nasdaq.com/market-activity/stocks/fb/historical).
 
 
