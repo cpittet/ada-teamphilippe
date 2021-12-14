@@ -60,7 +60,7 @@ Do the Europeans tend to speak more positively than the Americans ? Or maybe, do
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/cont_prop.html"></iframe>
 it is absolutely not suprising to see that American gathers almost 60% of the quotes because, as explained in the introduction, the data mostly comes from American newspapers which are more likely to speak about the actuality of their giant country. After the Americans, come the Europeans with around 20% of the quotes. An interesting thing is, despite being the continent with the largest population, Asia comes only in the third places with respect to the proportion of quotes made. It is even worst for Africa which is the second continent in terms of population but that comes in last position on the proportion of quotes ladder. The "Other" category corresponds to Antartica and other similar islands. As they represent almost no data point, we cannot safely remove them from our subsequent analysis. 
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/cont_mean.html"></iframe><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/cont_box.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="50%" height="400" allowfullscreen="true" src="figures/cont_mean.html"></iframe><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="50%" height="400" allowfullscreen="true" src="figures/cont_box.html"></iframe>
 
 In term of mean compound score, we can see that there is no continent which seems to be always more positive than the others. The spike on the graph is only caused by one quote so we unfortunately cannot make a global conclusion about Asian people at this point in time. On the other hand, over the whole period of time, it seems that Asia speeks a bit more negatively about Mark and Facebook.
 From the last plot, we can see that the above intuition about Asia is confirmed as they have a mean compound score which is statisticallly lower than the other continent. From this plot, we can also see that the European have spoken statistically more positively about Facebook and Mark than the other continent over the 5 years of news article spanned by Quotebank. 
@@ -76,7 +76,7 @@ The first thing we can see is that cluster 4 and 6 have in general less quotes t
 
 Our second analysis is to see if there is any cluster whose mean compound score is much higher than others.  To facilitate comparisons, we order the clusters in decreasing mean compound score. As shown in the boxplot below, we can see that the 4 first cluster have a much higher median for the compound score than the other clusters. 
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/boxplot_clusters.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/box_clusters.html"></iframe>
 
 We can also see that at least half of the person in each cluster speaks positively about Mark Zuckerberg. Specifically, in the first 4 clusters, we can see that this percentage is increased to 75%.
 
