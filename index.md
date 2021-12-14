@@ -103,11 +103,12 @@ a regression line estimated from the given feature only.
 
 blabla
 
-<div style="text-align: center"><iframe src="coeffs_gender.html"></iframe></div>
+
+{% include coeffs_gender.html %}
 
 #### Where do they come from ?
 
-
+<div style="text-align: center"><iframe src="coeffs_gender.html"></iframe></div>
 
 #### How old are they ? 
 
