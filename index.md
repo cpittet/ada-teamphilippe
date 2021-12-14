@@ -95,7 +95,7 @@ data in our design matrix. So for technical reasons, we focus only on these 2 ge
 #### Analysis by gender
 
 How the different features for each group, here women and men, relate to the stock price. Below, we
-have the relation between the stock price at week $n+1$ and the different features at week $n$, as well as
+have the relation between the stock price at week n+1 and the different features at week n, as well as
 a regression line estimated from the given feature only.
 
 ![Scatter plots gender](scatter_gender.png)
@@ -103,20 +103,19 @@ a regression line estimated from the given feature only.
 
 blabla
 
-
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="100%" allowfullscreen="true" src="coeffs_gender.html"></iframe> 
 
 #### Where do they come from ?
 
-
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="100%" allowfullscreen="true" src="coeffs_continent.html"></iframe>
 
 #### How old are they ? 
 
-
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="100%" allowfullscreen="true" src="coeffs_age.html"></iframe>
 
 #### Who are they ?
 
-
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="100%" allowfullscreen="true" src="coeffs_cluster.html"></iframe>
 
 # Conclusion (Feez)
 Answer to the question
