@@ -11,7 +11,7 @@ An introduction about project and why it could be useful.
 Describe where the data comes from 
 One or two sentences on how to extract the data
 
-# Sentiment analysis 
+# Sentiment analysis
 ## Global result (Neygo)
 Explain global result about sentiment analysis on the quotes concerning Mark Zuckerberg.
 present the two main plots and say that we cannot say anyhting.
@@ -23,9 +23,27 @@ Decompose the analysis into smaller groups.
 Result of the custom K medioids algorithm and small investigation of the clusters.
 
 ## Regression analysis (Cyrille and Alessio)
-### Stock price
-Explain how we will quantify the success of the companies.
-Recall of Cambridge analytica
+### How can we measure the success of an entrepreneur ?
+There are different possible ways to quantify the success of an entrepreneur. If we remain down to
+earth and do not enter philosophical discussions on what actually is success, we can imagine evaluating
+our person of interest, Mark Zuckerberg, by looking at his wealth over time. However, this is not always
+easy to do as is since we do not have transparent access to his assets, properties and their values.
+
+
+Instead, we use a "proxy" for his wealth by considering the stock price on the Nasdaq Market for a
+company is well known for, Facebook, now Meta Platforms Inc. Mark Zuckerberg is the CEO and one of the founders of Meta Platforms
+that regroups entities such as Facebook, Instagram, Whatsapp. As the stock market is generally reactive
+to, for examples, scandals, new improvements on products etc, it is a reasonable way to quantify how
+well Mark Zuckerberg is doing. Moreover, this is a reliable source of information for the period we are
+treating (2015-2020) as we can easily access daily stock prices for the past years.
+
+
+As said [above](#Sentiment analysis), we consider weekly data. For the stock price, the daily opening and closing
+prices are averaged and then these values are averaged over each week to get a single representative 
+price for the week. In the figure below, we have the evolution from 2015 to 2020 of this weekly average
+stock price. It increases steadily from 2015 until the beginning of 2018. Around March 2018, it falls.
+This corresponds to the period where the Cambridge Analytica scandal with Facebook exploded. So this verifies
+that the stock market is reactive to external events as we said above.
 
 ### Regression analysis on specific attributes
 Explain how we did regression analysis and present the results when splitting on different attribute values.
