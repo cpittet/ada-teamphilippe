@@ -19,7 +19,7 @@ But do these reviews have a real impact on the financial health of the company?
 
 In this article, we will analyze quotes from 2015 to 2020 from the Quotebank dataset to determine positive and negative thoughts about Mark Zuckerberg and his companies.
 Next, we will profile the types of people issuing these quotes and analyze their tendencies to speak kindly or unfavorably about Mark Zuckerberg.
-Finally, we will determine if the impact of these positive and negative reviews is significant on Facebook's stock numbers over time.
+Finally, for each of theses people catergories, we will determine if the impact of these positive and negative reviews is significant on Facebook's stock numbers over time.
 
 # Sentiment analysis<a name="sentiment"></a>
 ## Global result (Neygo)
