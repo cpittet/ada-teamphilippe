@@ -103,19 +103,19 @@ a regression line estimated from the given feature only.
 
 blabla
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="100%" allowfullscreen="true" src="coeffs_gender.html"></iframe> 
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="500" allowfullscreen="true" src="coeffs_gender.html"></iframe> 
 
 #### Where do they come from ?
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="100%" allowfullscreen="true" src="coeffs_continent.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="500" allowfullscreen="true" src="coeffs_continent.html"></iframe>
 
 #### How old are they ? 
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="100%" allowfullscreen="true" src="coeffs_age.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="500" allowfullscreen="true" src="coeffs_age.html"></iframe>
 
 #### Who are they ?
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="100%" allowfullscreen="true" src="coeffs_cluster.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="800" allowfullscreen="true" src="coeffs_cluster.html"></iframe>
 
 # Conclusion (Feez)
 Answer to the question
