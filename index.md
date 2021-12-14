@@ -104,11 +104,11 @@ a regression line estimated from the given feature only.
 blabla
 
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="500" allowfullscreen="true" src="coeffs_gender.html"></iframe> 
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="100%" allowfullscreen="true" src="coeffs_gender.html"></iframe> 
 
 #### Where do they come from ?
 
-<div style="text-align: center"><iframe src="coeffs_gender.html"></iframe></div>
+
 
 #### How old are they ? 
 
