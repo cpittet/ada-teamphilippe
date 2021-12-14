@@ -11,7 +11,7 @@ An introduction about project and why it could be useful.
 Describe where the data comes from 
 One or two sentences on how to extract the data
 
-# Sentiment analysis
+# Sentiment analysis<a name="sentiment"></a>
 ## Global result (Neygo)
 Explain global result about sentiment analysis on the quotes concerning Mark Zuckerberg.
 present the two main plots and say that we cannot say anyhting.
@@ -23,7 +23,15 @@ Decompose the analysis into smaller groups.
 Result of the custom K medioids algorithm and small investigation of the clusters.
 
 ## Regression analysis (Cyrille and Alessio)
+
+How do the opinions of different groups of people in the news about Mark Zuckerberg and his companies relate to the
+the success his success ? To investigate this question, we use different regression analyses. This
+allows us to discover if there are certain trends for a given group, whether these trends are statistically
+significant and how they impact his success. We see below how we can quantify the success of Mark Zuckerberg.
+
+
 ### How can we measure the success of an entrepreneur ?
+
 There are different possible ways to quantify the success of an entrepreneur. If we remain down to
 earth and do not enter philosophical discussions on what actually is success, we can imagine evaluating
 our person of interest, Mark Zuckerberg, by looking at his wealth over time. However, this is not always
@@ -38,15 +46,28 @@ well Mark Zuckerberg is doing. Moreover, this is a reliable source of informatio
 treating (2015-2020) as we can easily access daily stock prices for the past years.
 
 
-As said [above](#Sentiment analysis), we consider weekly data. For the stock price, the daily opening and closing
+As said [above](#sentiment), we consider weekly data. For the stock price, the daily opening and closing
 prices are averaged and then these values are averaged over each week to get a single representative 
 price for the week. In the figure below, we have the evolution from 2015 to 2020 of this weekly average
 stock price. It increases steadily from 2015 until the beginning of 2018. Around March 2018, it falls.
 This corresponds to the period where the Cambridge Analytica scandal with Facebook exploded. So this verifies
 that the stock market is reactive to external events as we said above.
 
+![](stock_price.png)
+
+More concretely, the design matrix is built as follows. A datapoint (predictor) is the vector of average positive and negative
+scores over a given week as well as the number of quotes made during that week, and this for every group. What 
+we would like to investigate is whether trends in the opinions of some groups give some indications about the
+futur behavior of the stock price of Meta. Therefore, for a predictor at week n, we consider the stock
+price at week n+1 as its response variable.
+
+
 ### Regression analysis on specific attributes
+
 Explain how we did regression analysis and present the results when splitting on different attribute values.
+
+
+
 ### regression analysis on the clustering
 Show and comment the regression analysis result on the group extracted via clustering.
 un espace
