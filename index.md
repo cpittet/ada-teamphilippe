@@ -117,21 +117,43 @@ Indeed, the number of quotes made by men is negative whereas the one for women i
 
 #### Where do they come from ?
 
+
+
 ![](scatter_continent1.png)
 ![](scatter_continent2.png)
 ![](scatter_continent3.png)
 ![](scatter_continent4.png)
 ![](scatter_continent5.png)
 
+Similarly to the analysis on genders, the only features that matters here are the number of quotes and the negative
+score but the positive score is not relevant (not statistically significant at level 5\%). Again, there is
+some contrast between the number of quotes in different groups. The more American quotes there is, the lower 
+the price tend to be whereas the more quotes there are in Europe or Asia, the higher the price is likely to be.
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="600" allowfullscreen="true" src="coeffs_continent.html"></iframe>
 
 #### How old are they ? 
 
+Here we look at the different ranges of age in the authors. Namely we consider the ranges [0-25], [26-50], [51-75], [76+].
+
 ![](scatter_age1.png)
 ![](scatter_age2.png)
 ![](scatter_age3.png)
 ![](scatter_age4.png)
+
+We don't change a winning team... it is again the count of quotes and the negative score that matter most. However,
+the positive score for the 76+ authors seem to be relevant as well. But, as surprisingly as before, the corresponding
+coefficient is negative, meaning that the more positive the quotes are for these people, the lower the stock price tends to be.
+
+We can also look at the magnitude of the significant coefficient for the negative scores. A larger coefficient
+would mean that this group is more "influential" or gives stronger indication that the stock price will be high (as they are all
+positive). For example here, the most relevant group would be the 26-50, which tend to be the most active and powerful
+in the industry in general, seem to weigh more in the behavior of the stock prices than the other 2 groups. This also
+reflect the fact that we have a majority of people in this range of age in our dataset.
+
+A contrast in the count of quotes also emerges. Young people seem to be more critical in their opinions than older people.
+Indeed, the coefficient for the count of quotes by young people (0-25) is negative whereas the one for the older people
+(76+) is positive. This is in concordance with our previous [analysis](#global-result-neygo).
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="800" allowfullscreen="true" src="coeffs_age.html"></iframe>
 
