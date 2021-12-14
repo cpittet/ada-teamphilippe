@@ -7,9 +7,19 @@ Do we put an image on the whole width behind the title ?
 ---
 # Skeleton
 # Abstract & introduction (Feez)
-An introduction about project and why it could be useful.
+<!-- An introduction about project and why it could be useful.
 Describe where the data comes from 
-One or two sentences on how to extract the data
+One or two sentences on how to extract the data-->
+
+In February 2004, at Harvard University, a student created a website allowing other students to discuss, exchange ideas, publish their best jokes. 
+This small project quickly spread to the campus, then to other universities, and finally to the whole world. This is how Mark Zuckerberg became a billionaire in a few years.
+However, like any famous person, he is often exposed to a lot of criticism, especially in recent years. It is important that each person can express himself freely by giving his opinion on the decisions and actions of multinationals. 
+By relaying these opinions in the media, it not only allows the company to get honest and constructive feedback, but also transmits the information to the customers or users, who might suffer the consequences.
+But do these reviews have a real impact on the financial health of the company? 
+
+In this article, we will analyze quotes from 2015 to 2020 from the Quotebank dataset to determine positive and negative thoughts about Mark Zuckerberg and his companies.
+Next, we will profile the types of people issuing these quotes and analyze their tendencies to speak kindly or unfavorably about Mark Zuckerberg.
+Finally, for each of theses people catergories, we will determine if the impact of these positive and negative reviews is significant on Facebook's stock numbers over time.
 
 # Sentiment analysis<a name="sentiment"></a>
 ## Global result (Neygo)
