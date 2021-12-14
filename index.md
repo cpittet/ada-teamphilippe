@@ -31,6 +31,7 @@ Recall of Cambridge analytica
 Explain how we did regression analysis and present the results when splitting on different attribute values.
 ### regression analysis on the clustering
 Show and comment the regression analysis result on the group extracted via clustering.
+un espace
 
 # Conclusion (Feez)
 Answer to the question
