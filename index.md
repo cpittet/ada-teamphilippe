@@ -104,7 +104,7 @@ a regression line estimated from the given feature only.
 blabla
 
 
-{% include coeffs_gender.html %}
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="500" allowfullscreen="true" src="coeffs_gender.html"></iframe> 
 
 #### Where do they come from ?
 
