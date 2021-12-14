@@ -68,8 +68,8 @@ that the stock market is reactive to external events as we said above.
 More concretely, the design matrix is built as follows. A datapoint (predictor) is the vector of average positive and negative
 scores over a given week as well as the number of quotes made during that week, and this for every group. What 
 we would like to investigate is whether trends in the opinions of some groups give some indications about the
-futur behavior of the stock price of Meta. Therefore, for a predictor at week $n$, we consider the stock
-price at week $n+1$ as its response variable. Since the different features do not have the same range (positive score
+futur behavior of the stock price of Meta. Therefore, for a predictor at week n, we consider the stock
+price at week n+1 as its response variable. Since the different features do not have the same range (positive score
 is between 0 and 1 but the number of quotes may be in the hundreds), we standardize the features.
 
 
@@ -96,26 +96,58 @@ data in our design matrix. So for technical reasons, we focus only on these 2 ge
 
 How the different features for each group, here women and men, relate to the stock price. Below, we
 have the relation between the stock price at week n+1 and the different features at week n, as well as
-a regression line estimated from the given feature only.
+a regression line estimated from the given feature only. We directly observe that there is no very clear linear correlation
+between a feature and the price. Some features as the positive mean for men even seem to be irrelevant whereas
+other features such as the number of quotes made by women seem to exhibit a slight linear relationship.
 
 ![Scatter plots gender](scatter_gender.png)
 ![Scatter plots gender1](scatter_gender1.png)
 
-blabla
+To find more accurate insights about these possible trends, let's consider the coefficients obtained 
+with a linear regression taking as input all the 6 features above and as output the (delayed) average stock price.
+The statistically significant coefficients at level 5\% are shown in color, the others in gray. Over the 6 features,
+only 3 are statistically significant at level 5\%. Surprisingly, the coefficient associated to the negative
+sentiment for the men is positive. This means that the more negative the men quotes are the higher the stock prices
+tend to be.
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="500" allowfullscreen="true" src="coeffs_gender.html"></iframe> 
+Women quotes are a good sign for the price whereas the number of men quotes is a bad omen for the stock price.
+Indeed, the number of quotes made by men is negative whereas the one for women is positive.
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="600" allowfullscreen="true" src="coeffs_gender.html"></iframe> 
 
 #### Where do they come from ?
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="500" allowfullscreen="true" src="coeffs_continent.html"></iframe>
+![](scatter_continent1.png)
+![](scatter_continent2.png)
+![](scatter_continent3.png)
+![](scatter_continent4.png)
+![](scatter_continent5.png)
+
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="600" allowfullscreen="true" src="coeffs_continent.html"></iframe>
 
 #### How old are they ? 
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="500" allowfullscreen="true" src="coeffs_age.html"></iframe>
+![](scatter_age1.png)
+![](scatter_age2.png)
+![](scatter_age3.png)
+![](scatter_age4.png)
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="800" allowfullscreen="true" src="coeffs_age.html"></iframe>
 
 #### Who are they ?
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="800" allowfullscreen="true" src="coeffs_cluster.html"></iframe>
+![](scatter_cluster1.png)
+![](scatter_cluster2.png)
+![](scatter_cluster3.png)
+![](scatter_cluster4.png)
+![](scatter_cluster5.png)
+![](scatter_cluster6.png)
+![](scatter_cluster7.png)
+![](scatter_cluster8.png)
+![](scatter_cluster9.png)
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="1000" allowfullscreen="true" src="coeffs_cluster.html"></iframe>
 
 # Conclusion (Feez)
 Answer to the question
