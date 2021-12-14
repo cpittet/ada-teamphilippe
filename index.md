@@ -1,9 +1,9 @@
 ---
-layout: home
-title: Opinions in news and success of Meta (or Mark Zuckerberg)
+layout: page
+title: Opinions in News and Mark Zuckerberg success
 subtitle: Data Story
 ---
-
+Do we put an image on the whole width behind the title ?
 ---
 # Skeleton
 # Abstract & introduction (Feez)
@@ -53,24 +53,59 @@ stock price. It increases steadily from 2015 until the beginning of 2018. Around
 This corresponds to the period where the Cambridge Analytica scandal with Facebook exploded. So this verifies
 that the stock market is reactive to external events as we said above.
 
-![](stock_price.png)
+![Stock price](stock_price.png)
 
 More concretely, the design matrix is built as follows. A datapoint (predictor) is the vector of average positive and negative
 scores over a given week as well as the number of quotes made during that week, and this for every group. What 
 we would like to investigate is whether trends in the opinions of some groups give some indications about the
-futur behavior of the stock price of Meta. Therefore, for a predictor at week n, we consider the stock
-price at week n+1 as its response variable.
+futur behavior of the stock price of Meta. Therefore, for a predictor at week $n$, we consider the stock
+price at week $n+1$ as its response variable. Since the different features do not have the same range (positive score
+is between 0 and 1 but the number of quotes may be in the hundreds), we standardize the features.
+
+
+Note that here the goal is exactly to predict very accurately the stock price of the upcoming week based
+on the current week quotes but rather to see if there trends among certain groups that emerges. To accurately
+predict the stock prices, we would probably need more complex models as well as other features. However, more complex models
+quickly becomes less interpretable (black-box models) and this would prevent us to extract the trends
+we look for. So a simple linear regression is well suited for this task.
 
 
 ### Regression analysis on specific attributes
 
-Explain how we did regression analysis and present the results when splitting on different attribute values.
+Let's look at different possible characterizations of people. Below, we consider the following one :
+ - Gender (named according to WikiData)
+ - The continent where the author comes from
+ - Her/his age, distributed into 4 ranges : 0-25, 26-50, 51-75 and 75+
+ - Using our custom [clustering](#clustering)
+
+The data contained many different genders. Sadly, the genders other than women/men were under-represented.
+This means many weeks were not containing any quotes by such authors and therefore would introduce missing
+data in our design matrix. So for technical reasons, we focus only on these 2 genders.
+
+#### Analysis by gender
+
+How the different features for each group, here women and men, relate to the stock price. Below, we
+have the relation between the stock price at week $n+1$ and the different features at week $n$, as well as
+a regression line estimated from the given feature only.
+
+![Scatter plots gender](scatter_gender.png)
+![Scatter plots gender1](scatter_gender1.png)
+
+blabla
+
+<div style="text-align: center"><iframe src="coeffs_gender.html"></iframe></div>
+
+#### Where do they come from ?
 
 
 
-### regression analysis on the clustering
-Show and comment the regression analysis result on the group extracted via clustering.
-un espace
+#### How old are they ? 
+
+
+
+#### Who are they ?
+
+
 
 # Conclusion (Feez)
 Answer to the question
