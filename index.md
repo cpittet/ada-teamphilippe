@@ -19,11 +19,12 @@ But do these reviews have a real impact on the financial health of the company?
 
 In this article, we will analyze quotes from 2015 to 2020 from the Quotebank dataset to determine positive and negative thoughts about Mark Zuckerberg and his companies.
 Next, we will profile the types of people issuing these quotes and analyze their tendencies to speak kindly or unfavorably about Mark Zuckerberg.
-Finally, for each of theses people catergories, we will determine if the impact of these positive and negative reviews is significant on Facebook's stock numbers over time.
+Finally, for each of these people categories, we will determine if the impact of these positive and negative reviews is significant on Facebook's stock numbers over time.
 
 # Sentiment analysis<a name="sentiment"></a>
 ## Global result <a name="sentiment_global"></a>
-To assign a sentiment to each quotes, we first use a pre-existing sentiment analyser that will output a score, referred to as the **mean compound score**, in the [-1,1] interval. If the score is close to 1, it means that the quote conveys a very positive sentiment whereas a score close to -1 indicates a very negative meaning.
+To assign a sentiment to each quote, we first use a pre-existing sentiment analyser that will output a score, referred to as the **compound score**, in the [-1,1] interval. If the score is close to 1, it means that the quote conveys a very positive sentiment whereas a score close to -1 indicates a very negative meaning.
+Therefore, we assign a sentiment label to each quote by thresholding the compound score. 
 We began by doing an overall analysis of sentiment over time. Specifically, we look at the proportions of each sentiment (positive, negative, neutral) during each week. 
 
 The majority of quotes are positive (or neutral), henceforth negative quotes represent only a small fraction of all the quotes in a given week.
