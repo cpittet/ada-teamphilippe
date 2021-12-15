@@ -95,7 +95,7 @@ Our final try is to let a clustering algorithm runs and see if, based only on pe
 Finally, we force each clusters to contain at least 2'000 people so that the size of each cluster is large enough for our subsequent analyses to be valuable. The total number of clusters found by the algorithm is 9. 
 
 Earlier in this article, we saw gender and continent characteristics at a quote level, i.e. we inspect the distribution of the quotes by continent and gender but at the quote level. Here, we change our vision and we rather look at them from a person persepective. 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="650" allowfullscreen="true" src="figures/global_distribution.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="700" allowfullscreen="true" src="figures/global_distribution.html"></iframe>
 In the plot, we can see the different distribution of the attributes of the quoters of Mark Zuckerberg. We choose to only display the first 5 nationalities and occupations as the other ones group a tiny percentages of the population. 
 From the above plot, we can see the most represented professions in the datasets are actor (6.22%) and politicians (7.05%). Furthermore, as already mentioned, most of the quoter comes from the United States and therefore from America which explain the two large percentages we got in the nationality and continent pie charts. 
 We can also see that the second nationality in terms of number of quoters is the United Kingdom which explains such a high score for the Europeans. As already mentioned in this article, the number of men is much higher than the number of women.
