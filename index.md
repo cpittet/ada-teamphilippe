@@ -183,7 +183,7 @@ tend to be.
 Women quotes are a good sign for the price whereas the number of men quotes is a bad omen for the stock price.
 Indeed, the number of quotes made by men is negative whereas the one for women is positive.
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="600" allowfullscreen="true" src="assets/img/coeffs_gender.html"></iframe> 
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="600" allowfullscreen="true" src="figures/coeffs_gender.html"></iframe> 
 
 #### Where do they come from ?
 
@@ -195,7 +195,7 @@ score but the positive score is not relevant (not statistically significant at l
 some contrast between the number of quotes in different groups. The more American quotes there is, the lower 
 the price tend to be whereas the more quotes there are in Europe or Asia, the higher the price is likely to be.
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="600" allowfullscreen="true" src="assets/img/coeffs_continent.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="600" allowfullscreen="true" src="figures/coeffs_continent.html"></iframe>
 
 #### How old are they ? 
 
@@ -217,11 +217,11 @@ A contrast in the count of quotes also emerges. Young people seem to be more cri
 Indeed, the coefficient for the count of quotes by young people (0-25) is negative whereas the one for the older people
 (76+) is positive. This is in concordance with our previous [analysis](#global-result-neygo).
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="800" allowfullscreen="true" src="assets/img/coeffs_age.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="800" allowfullscreen="true" src="figures/coeffs_age.html"></iframe>
 
 #### Who are they ?
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="1000" allowfullscreen="true" src="assets/img/coeffs_cluster.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="1000" allowfullscreen="true" src="figures/coeffs_cluster.html"></iframe>
 
 # Conclusion (Feez)
 Answer to the question
