@@ -131,14 +131,14 @@ The most interesting points in this clustering analysis is that the women are ex
     <option value="7">Cluster 7</option>
 </select>
 <br>
-<iframe frameborder="no" border="0" marginwidth="0" id="cluster0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/cluster_distribution_0.html"></iframe>
-<iframe frameborder="no" border="0" marginwidth="0" id="cluster1" style="display:none;" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/cluster_distribution_1.html"></iframe>
-<iframe frameborder="no" border="0" marginwidth="0" id="cluster2" style="display:none;" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/cluster_distribution_2.html"></iframe>
-<iframe frameborder="no" border="0" marginwidth="0" id="cluster3" style="display:none;" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/cluster_distribution_3.html"></iframe>
-<iframe frameborder="no" border="0" marginwidth="0" id="cluster4" style="display:none;" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/cluster_distribution_4.html"></iframe>
-<iframe frameborder="no" border="0" marginwidth="0" id="cluster5" style="display:none;" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/cluster_distribution_5.html"></iframe>
-<iframe frameborder="no" border="0" marginwidth="0" id="cluster6" style="display:none;" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/cluster_distribution_6.html"></iframe>
-<iframe frameborder="no" border="0" marginwidth="0" id="cluster7" style="display:none;" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/cluster_distribution_7.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" id="cluster0" style="display:block;"marginheight="0" width="100%" height="650" allowfullscreen="true" src="figures/cluster_distribution_0.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" id="cluster1" style="display:none;" marginheight="0" width="100%" height="650" allowfullscreen="true" src="figures/cluster_distribution_1.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" id="cluster2" style="display:none;" marginheight="0" width="100%" height="650" allowfullscreen="true" src="figures/cluster_distribution_2.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" id="cluster3" style="display:none;" marginheight="0" width="100%" height="650" allowfullscreen="true" src="figures/cluster_distribution_3.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" id="cluster4" style="display:none;" marginheight="0" width="100%" height="650" allowfullscreen="true" src="figures/cluster_distribution_4.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" id="cluster5" style="display:none;" marginheight="0" width="100%" height="650" allowfullscreen="true" src="figures/cluster_distribution_5.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" id="cluster6" style="display:none;" marginheight="0" width="100%" height="650" allowfullscreen="true" src="figures/cluster_distribution_6.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" id="cluster7" style="display:none;" marginheight="0" width="100%" height="650" allowfullscreen="true" src="figures/cluster_distribution_7.html"></iframe>
 
 <script>
 function checkDisplay(sel) {
