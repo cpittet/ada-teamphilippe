@@ -106,8 +106,8 @@ We start by seeing how the different people are distributed in the clusters.
     <option value="0" selected="selected">Cluster 0</option>
     <option value="1">Cluster 1</option>
     <option value="2">Cluster 2</option>
-    <option value=""3">Cluster 3</option>
-    <option value=4">Cluster 4</option>
+    <option value="3">Cluster 3</option>
+    <option value="4">Cluster 4</option>
     <option value="5">Cluster 5</option>
     <option value="6">Cluster 6</option>
     <option value="7">Cluster 7</option>
