@@ -29,13 +29,13 @@ The majority of quotes are positive (or neutral), so negative quotes are only a 
 We also observe that the proportion of positive quotes decreases slightly around 2018-2019, negative quotes were increasing at the same time.
 This corresponds to the period when the Cambridge analytica scandal was revealed.
 
-[fig 1]
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/sentiments_category.html"></iframe>
 
 We then look at the overall average scores during each week.
 As one might expect, the data are rather flat since we are averaging the different opinions and thus there is not much variance in the data. 
 We observe, however, that in general the sentiment analyzer tends to assign a rather high neutral score and the quotes tend to be more positive than negative on average.
 
-[fig 2]
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/means_sentiments.html"></iframe>
 
 To finish with the overall observation, we noticed that the number of citations is not consistent over time. 
 The first observation is this high spike in early 2018.
