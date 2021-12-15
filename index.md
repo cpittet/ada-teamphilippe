@@ -66,7 +66,7 @@ From the first above plot, we can see that in general the category [0, 25] tends
 
 We can also see two big spikes to low score in the plot about the mean compound score. The first one is not very significant since it is caused by only 2 persons. The second spike, on the other hand, corresponds to the [0-25] category and occurred in November 2016. Although that it is only caused by 14 people, it is known that Quotebank collect almost no data during this period of time. Furthermore, it is also known that, at that point in time, Facebook was accused of having allowed Cambridge Analytica to use the personal information of 87 millions people collected from Facebook. This information would have influenced the 2016 US election and maybe other important events after, such as the Brexit. We therefore think that this very low average score at that particular point in time from the younger people (maybe the more susceptible to use social networks) represents their anger toward Facebook following this scandal. And even though 14 quotes is not enough, we can suspect that at this time, most of the person using Facebook in a daily manner may feel the same way after this revelation. We will see that such a negative spike in the sentiments score for November 2016 will come back several times during our analyses.
 
-#### Clustering based on gender<a name="cluser_gender"></a>
+#### Clustering based on gender<a name="cluster_gender"></a>
 Let us now look at the quotes by analysing them from a gender perspective. Among the quoters of Mark Zuckerberg, there are a lot of different genders. To be precise, we get exactly 18 different genders from the data. As before, let us first see the proportion of each gender over time among the quoters of Mark. 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/gender_prop.html"></iframe>
 ==> No category other in the plot ?
@@ -77,7 +77,7 @@ We choose to group genders other than men or women into the "Other" category as 
 By looking at the mean compound score, the first thing that stands out is that the curve for the women tends to be above the curve of men almost all the time. The only exception is in November 2016 where the small number of quotes we have from women at this date gives us the overall lowest mean compound score of all time. Again, this date corresponds to the beginning of the Facebook-Cambridge Analytica scandal. However, men and women tend to be mostly neutral (or a bit biased toward positive) over time. The mean compound score for the two groups is shown in the box plot and we can see that women have a mean score a bit higher (difference of 0.07) than men over the whole period of quotes. The difference in the sentiment score between the men and women is statistically significant at level 5%. 
 
 
-#### Clustering based on continent<a name="cluser_continent"></a>
+#### Clustering based on continent<a name="cluster_continent"></a>
 Do the Europeans tend to speak more positively than the Americans ? Or maybe, does the Asians have a tendency to give a more negative opinion about Mark Zuckerberg and/or Facebook ? That's the kind of questions we will try to answer by clustering people with respect to their continents. As before, let us start by inspecting the number of data we have for each continent. 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/cont_prop.html"></iframe>
 It is absolutely not surprising to see that Americans gather almost 60% of the quotes at any time  since, as explained in the introduction, the data mostly comes from American newspapers which are more likely to speak about the actuality of their country. 
@@ -89,17 +89,18 @@ After the Americans, come the Europeans with around 20% of the quotes. An intere
 In terms of mean compound score, we can see that there is no continent which seems to be always more positive than the others. The spikes we can see in the plot is only caused by one quote which means that we cannot conclude anything interesting. On the other hand, over the whole period of time, it seems that Asia speaks a bit more negatively about Mark and Facebook.
 From the last plot, we can see that the above intuition about Asia is confirmed as they have a mean compound score statistically lower than the other continents. From this plot, we can also see that the European have spoken statistically more positively about Facebook and Mark than the others over the 5 years of news articles spanned by Quotebank. 
 
-#### Clustering<a name="cluser_cluser"></a>
+#### Clustering<a name="cluster_cluster"></a>
 Our final try is to let a clustering algorithm runs and see if, based only on peoples' demographic attributes, it can create clusters grouping people talking mostly positively or negatively about Mark or Facebook in the quotes. To do so, the clustering algorithm will use demographic attributes associated to the quoter. These information were colected from Wikidata. To be more precise, to compute the distance between two quoters, we use their age, nationality, profession, religion and gender. The other attributes collected from Wikidata were not set in enough quoter to be able to use them. As they were a lot of quoters, we choose to oblige all the attributes so that we can get a more meaniningful distance as well as reducing the number of quoters we need to process.
 
 Finally, we force each clusters to contain at least 2'000 people so that the size of each cluster is large enough for our subsequent analyses to be valuable. The total number of clusters found by the algorithm is 9. 
 
-We start by seeing how the different people are distributed in the clusters.
-
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/bar_plot_proportion.html"></iframe>
-
+Earlier in this article, we saw gender and continent characteristics at a quote level, i.e. we inspect the distribution of the quotes by continent and gender but at the quote level. Here, we change our vision and we rather look at them from a person persepective. 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="650" allowfullscreen="true" src="figures/global_distribution.html"></iframe>
+In the plot, we can see the different distribution of the attributes of the quoters of Mark Zuckerberg. We choose to only display the first 5 nationalities and occupations as the other ones group a tiny percentages of the population. 
+From the above plot, we can see the most represented professions in the datasets are actor (6.22%) and politicians (7.05%). Furthermore, as already mentioned, most of the quoter comes from the United States and therefore from America which explain the two large percentages we got in the nationality and continent pie charts. 
+We can also see that the second nationality in terms of number of quoters is the United Kingdom which explains such a high score for the Europeans. As already mentioned in this article, the number of men is much higher than the number of women.
 
+Let's now look in deeper details about which type of person is contained in each cluster. (Note that using the dropdown, you are able to explore each cluster)
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 <select  class="form-control col-2" aria-label="" onchange="checkDisplay(this)">
@@ -123,7 +124,6 @@ We start by seeing how the different people are distributed in the clusters.
 <iframe frameborder="no" border="0" marginwidth="0" onload="setDisplayNone('6')" id="cluster6" marginheight="0" width="100%" height="650" allowfullscreen="true" src="figures/cluster_distribution_6.html"></iframe>
 <iframe frameborder="no" border="0" marginwidth="0" onload="setDisplayNone('7')" id="cluster7" marginheight="0" width="100%" height="650" allowfullscreen="true" src="figures/cluster_distribution_7.html"></iframe>
 <iframe frameborder="no" border="0" marginwidth="0" onload="setDisplayNone('8')" id="cluster8" marginheight="0" width="100%" height="650" allowfullscreen="true" src="figures/cluster_distribution_8.html"></iframe>
-
 <script>
 function checkDisplay(sel) {
     for(var i=0; i<8;i++){
@@ -137,35 +137,24 @@ function setDisplayNone(id){
 
 
 </script>
+From the above plots, we can see that our clustering works well and the clusters are almost all interpretable. Using the above decomposition of each cluster, we can make the following comments.
+In cluster 0, we can observe that it is almost exclusively composed of women which have movie and television related profession (actress and model) coming from the United States of America. 
+In cluster 1, we got athletes men from the United States. Athletes from various sports from the United Kingdom populate cluster 2. In cluster 3, we can see that most of the quoters are men with cinema related professions from the USA and also a bit from India.
+Cluster 4 is perhaps the less interpretable cluster but it gathers men from the United Kingdom in majority. Cluster 5 groups mainly people with a writing related profession such as writer, screenwriter or jouranlist, coming from America. 
+The three last clusters are mainly composed of politicians from the USA. However, cluster 6 is composed of women whereas the other two, which are almost indistinguishable, are composed of men.
 
-From the above information and plots, we can see that our clustering works pretty well and the clusters are almost all interpretable. To go a bit further, we will now analyse each cluster separately.
-- Cluster 0 :
-Mainly composed of women, this cluster corresponds to the television professions, more specifically artists, and gathers ~60% of the total number of women.
-- Cluster 1 :
-Here, we can see that most of our cluster is composed of sportive men from America. 
-- Cluster 2 :
-This cluster is mostly composed of male footballers and football managers from the United Kingdom and gathers ~35% of the total number of Europeans.
-- Cluster 3 :
-Here, we have actors and a lot of movie professions from America.
-- Cluster 4 :
-This cluster is mainly composed of male politicians and artists from the United Kingdom and gathers ~20% of the total number of Europeans.
-- Cluster 5 :
-This cluster consists mostly of male journalists from America.
-- Cluster 6 :
-Here, we have the second cluster of women which gathers ~35% of the total number of women. We can also see that the professions in this cluster are politicians and artists.
-- Cluster 7 & 8 :
-Unfortunately, these two clusters are really similar and are composed of politician men from America. 
-
-The most interesting points in this clustering analysis is that the women are extremely well separated from the men (see cluzster 0 and 6). Also, we can see that our dataset is really biased toward actors (or movie professions), politicians and athletes while the other professions are under-represented.
+Our interesting point is that our clustering function really split men and women in disjoint clusters. Also, this analysis allow us to shed light on the fact that our dataset is also biased toward actors (or movie professions), journalist, politicians and athletes while the other professions are under-represented.
 
 
 
 As before, we continue by seeing if there is a cluster which contains more quotes than others. 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/prop_clusters.html"></iframe>
 
-The first thing we can see is that cluster 4 and 6 have in general less quotes than any other cluster. Then, come clusters 2,3,5,7,8. Finally, cluster 0 and 1 tend to speak more about Facebook and Mark Zuckerberg. 
+The first thing we can see is that cluster 4 and 6 have in general fewer quotes than any other cluster. Then, come clusters 2,3,5,7,8. Finally, cluster 0 and 1 tend to speak more about Facebook and Mark Zuckerberg. 
 
 Our second analysis is about to see if there is any cluster whose mean compound score is much higher than others. To facilitate comparisons, we order the clusters in decreasing mean compound score order. As shown in the boxplot below, we can see that the 4 first cluster have a much higher median for the compound score than the other clusters. 
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/bar_plot_proportion.html"></iframe>
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/box_clusters.html"></iframe>
 
