@@ -191,34 +191,26 @@ tend to be.
 Women quotes are a good sign for the price whereas the number of men quotes is a bad omen for the stock price.
 Indeed, the number of quotes made by men is negative whereas the one for women is positive.
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="600" allowfullscreen="true" src="assets/img/coeffs_gender.html"></iframe> 
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="600" allowfullscreen="true" src="figures/coeffs_gender.html"></iframe> 
 
 #### Where do they come from ?
 
+Comparably to the analysis on genders, the plots of the stock price w.r.t. each of the features do not exhibit very clear
+trends, and we omit it here for clarity questions.
 
-
-![](assets/img/scatter_continent1.png)
-![](assets/img/scatter_continent2.png)
-![](assets/img/scatter_continent3.png)
-![](assets/img/scatter_continent4.png)
-![](assets/img/scatter_continent5.png)
-
-Similarly to the analysis on genders, the only features that matters here are the number of quotes and the negative
+Similarly to the regression on genders, the only features that matters here are the number of quotes and the negative
 score but the positive score is not relevant (not statistically significant at level 5\%). Again, there is
 some contrast between the number of quotes in different groups. The more American quotes there is, the lower 
 the price tend to be whereas the more quotes there are in Europe or Asia, the higher the price is likely to be.
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="600" allowfullscreen="true" src="assets/img/coeffs_continent.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="600" allowfullscreen="true" src="figures/coeffs_continent.html"></iframe>
 
 #### How old are they ? 
 
-Here we look at the different ranges of age in the authors. Namely we consider the ranges [0-25], [26-50], [51-75], [76+].
-
-![](assets/img/scatter_age1.png)
-![](assets/img/scatter_age2.png)
-![](assets/img/scatter_age3.png)
-![](assets/img/scatter_age4.png)
-
+Here we look at the different ranges of age in the authors. Namely, we consider the ranges [0-25], [26-50], [51-75], [76+].
+As what was done in the two previous analysis, we do not show the plots of the relationships between the features and the stock prices
+since they are very similar and do not add much insight.
+ 
 We don't change a winning team... it is again the count of quotes and the negative score that matter most. However,
 the positive score for the 76+ authors seem to be relevant as well. But, as surprisingly as before, the corresponding
 coefficient is negative, meaning that the more positive the quotes are for these people, the lower the stock price tends to be.
@@ -233,21 +225,11 @@ A contrast in the count of quotes also emerges. Young people seem to be more cri
 Indeed, the coefficient for the count of quotes by young people (0-25) is negative whereas the one for the older people
 (76+) is positive. This is in concordance with our previous [analysis](#global-result-neygo).
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="800" allowfullscreen="true" src="assets/img/coeffs_age.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="800" allowfullscreen="true" src="figures/coeffs_age.html"></iframe>
 
 #### Who are they ?
 
-![](assets/img/scatter_cluster1.png)
-![](assets/img/scatter_cluster2.png)
-![](assets/img/scatter_cluster3.png)
-![](assets/img/scatter_cluster4.png)
-![](assets/img/scatter_cluster5.png)
-![](assets/img/scatter_cluster6.png)
-![](assets/img/scatter_cluster7.png)
-![](assets/img/scatter_cluster8.png)
-![](assets/img/scatter_cluster9.png)
-
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="1000" allowfullscreen="true" src="assets/img/coeffs_cluster.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="1000" allowfullscreen="true" src="figures/coeffs_cluster.html"></iframe>
 
 # Conclusion (Feez)
 Answer to the question
