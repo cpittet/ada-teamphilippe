@@ -23,24 +23,18 @@ Finally, for each of theses people catergories, we will determine if the impact 
 
 # Sentiment analysis<a name="sentiment"></a>
 ## Global result <a name="sentiment_global"></a>
+To assign a sentiment to each quotes, we first use a pre-existing sentiment analyser that will output a score, referred to as the **mean compound score**, in the [-1,1] interval. If the score is close to 1, it means that the quote conveys a very positive sentiment whereas a score close to -1 indicates a very negative meaning.
+We began by doing an overall analysis of sentiment over time. Specifically, we look at the proportions of each sentiment (positive, negative, neutral) during each week. 
 
-We began by doing an overall analysis of sentiment over time. Specifically, we look at the proportions of each label (positive, negative, neutral) during each week. 
-The majority of quotes are positive (or neutral), so negative quotes are only a small fraction of all quotes in a given week.
+The majority of quotes are positive (or neutral), henceforth negative quotes represent only a small fraction of all the quotes in a given week.
 We also observe that the proportion of positive quotes decreases slightly around 2018-2019, negative quotes were increasing at the same time.
-This corresponds to the period when the Cambridge analytica scandal was revealed.
+This corresponds to the period when the Cambridge analytica scandal was revealed extensively in the media.
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/sentiments_category.html"></iframe>
 
-We then look at the overall average scores during each week.
-As one might expect, the data are rather flat since we are averaging the different opinions and thus there is not much variance in the data. 
-We observe, however, that in general the sentiment analyzer tends to assign a rather high neutral score and the quotes tend to be more positive than negative on average.
-
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/means_sentiments.html"></iframe>
-
-To finish with the overall observation, we noticed that the number of citations is not consistent over time. 
+To finish with the overall observations, we noticed that the number of quotes is not consistent over time. 
 The first observation is this high spike in early 2018.
-As precedded, this is when the Cambridge Analytica scandal exploded.
-As seen above, quotes were becoming more negative at this time as well. 
+As already explained earlier, that's when the Cambridge Analytica scandal exploded in the media, therefore it makes sense than the number of quotes is also scaling up.
 There are also a few weeks with very few quotes from the source used to harvest the data.
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/nb_quotes_by_period.html"></iframe>
