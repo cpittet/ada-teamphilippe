@@ -184,10 +184,10 @@ easy to do as is since we do not have transparent access to his assets, properti
 
 Instead, we use a "proxy" for his wealth by considering the stock price on the Nasdaq Market for a
 company he is well known for, Facebook, now Meta Platforms Inc. Mark Zuckerberg is the CEO and one of the founders of Meta Platforms
-that regroups entities such as Facebook, Instagram, Whatsapp. As the stock market is generally reactive
+that regroups entities such as Facebook, Instagram and Whatsapp. As the stock market is generally reactive
 to, for examples, scandals, new improvements on products etc, it is a reasonable way to quantify how
 well Mark Zuckerberg is doing. Moreover, this is a reliable source of information for the period we are
-treating (2015-2020) as we can easily access daily stock prices for the past years.
+treating (2015-2020) as we can easily access [daily stock prices](https://www.nasdaq.com/market-activity/stocks/fb/historical) for the past years.
 
 
 As said [above](#sentiment), we consider weekly data. For the stock price, the daily opening and closing
@@ -199,6 +199,8 @@ that the stock market is reactive to external events as we said above.
 
 ![Stock price](stock_price.png)
 
+To relate the opinions of different groups in the news with the stock prices, we will use a simple linear regression,
+where the inputs are the different polarity scores and the output is the stock price.
 More concretely, the design matrix is built as follows. A datapoint (predictor) is the vector of average positive and negative
 scores over a given week as well as the number of quotes made during that week, and this for every group. What 
 we would like to investigate is whether trends in the opinions of some groups give some indications about the
@@ -228,26 +230,28 @@ data in our design matrix. So for technical reasons, we focus only on these 2 ge
 
 #### Analysis by gender
 
-How the different features for each group, here women and men, relate to the stock price. Below, we
-have the relation between the stock price at week n+1 and the different features at week n, as well as
+How do the different features for each group, here women and men, relate to the stock price ? Below, we
+have the relationship between the stock price at week n+1 and the different features at week n, as well as
 a regression line estimated from the given feature only. We directly observe that there is no very clear linear correlation
-between a feature and the price. Some features as the positive mean for men even seem to be irrelevant whereas
-other features such as the number of quotes made by women seem to exhibit a slight linear relationship.
+between a feature and the price. Some predictor such as the positive mean for men even seem to be irrelevant whereas
+others such as the number of quotes made by women seem to exhibit a slight linear relationship.
 
 ![Scatter plots gender](assets/img/scatter_gender.png)
 ![Scatter plots gender1](assets/img/scatter_gender1.png)
 
-To find more accurate insights about these possible trends, let's consider the coefficients obtained 
+To find more accurate insights about these possible trends, consider the coefficients obtained 
 with a linear regression taking as input all the 6 features above and as output the (delayed) average stock price.
 The statistically significant coefficients at level 5% are shown in color, the others in gray. Over the 6 features,
-only 3 are statistically significant at level 5%. Surprisingly, the coefficient associated to the negative
+only 3 are statistically significant at level 5%. You probably imagine that if people are speaking favorably then this would
+have a positive effect on the stock price and vice-versa. But surprisingly, the coefficient associated to the negative
 sentiment for the men is positive. This means that the more negative the men quotes are the higher the stock prices
-tend to be.
+tend to be. A hypothesis for this could be that since [most of the quotes convey a rather favorable opinion](#global-result-a-namesentiment_globala)
+they do not contain much information. However, since the pessimistic quotes are rarer, they carry a stronger signal.
 
 Women quotes are a good sign for the price whereas the number of men quotes is a bad omen for the stock price.
 Indeed, the number of quotes made by men is negative whereas the one for women is positive.
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="300" allowfullscreen="true" src="figures/coeffs_gender.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/coeffs_gender.html"></iframe>
 
 Does the model fit well the data ? Our linear regression model reaches a $R^2$ score of 0.36. So it is able
 to capture more variance than a constant model.
@@ -273,7 +277,7 @@ As what was done in the two previous analysis, we do not show the plots of the r
 since they are very similar and do not add much insights.
  
 We don't change a winning team... it is again the count of quotes and the negative score that matter most. However,
-the positive score for the 76+ authors seem to be relevant as well. But, as surprisingly as before, the corresponding
+the positive score for the 76+ authors seems to be relevant as well. But, as surprisingly as before, the corresponding
 coefficient is negative, meaning that the more positive the quotes are for these people, the lower the stock price tends to be.
 
 We can also look at the magnitude of the significant coefficient for the negative scores. A larger coefficient
@@ -284,7 +288,7 @@ reflect the fact that we have a majority of people in this range of age in our d
 
 A contrast in the count of quotes also emerges. Young people seem to be more critical in their opinions than older people.
 Indeed, the coefficient for the count of quotes by young people (0-25) is negative whereas the one for the older people
-(76+) is positive. This is in concordance with our previous [analysis](#global-result-neygo).
+(76+) is positive. This is in concordance with our previous [analysis](#global-result-a-namesentiment_globala).
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="600" allowfullscreen="true" src="figures/coeffs_age.html"></iframe>
 
@@ -294,16 +298,16 @@ For this model, the $R^2$ score is 0.28, so it captures more variance in the dat
 
 Similarly to what is done for the other analyses, we omit the features plots for presentations reasons.
 
-Cluster containing mainly women, such as clusters 0 and 6, tend to have a positive influence via their count coefficient.
+Clusters containing mainly women, such as clusters 0 and 6, tend to have a positive influence via their count coefficient.
 The count of quotes of American men however rather negative for the stock price as we can see in clusters 1 and 5. This is
 what we also observed in the analyses about [continents](#where-do-they-come-from-) and [gender](#analysis-by-gender).
 
-Let's now try to investigate which professions are the most influential. We could expect that professions such as economists,
+Let's now investigate which professions are the most impactful. We could expect that professions such as economists,
 politicians weigh more in the game than artists, athletes or similar. For example, consider the coefficients corresponding
-to the negative score of clusters 1, 5 and 7, which are statistically significant at level 5%. These [clusters](#clustering) mainly contains
+to the negative score of clusters 1, 5 and 7, which are statistically significant at level 5%. These [clusters](#clustering) mainly contain
 American male athletes, American male journalists and American male politicians, respectively. By inspecting
 the magnitude of these coefficients, we can deduce that the larger ones are more important for the stock price.
-In our case, the most relevant profession is journalist, followed by politician and finally athletes. This is comparable
+In our case, the most relevant profession is journalist, followed by politician and finally athlete. This is comparable
 to what we expected.
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="750" allowfullscreen="true" src="figures/coeffs_cluster.html"></iframe>
