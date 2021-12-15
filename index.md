@@ -130,14 +130,15 @@ The most interesting points in this clustering analysis is that the women are ex
     <option value="7">Cluster 7</option>
 </select>
 <br>
-<iframe id="cluster0"></iframe>
-<iframe id="cluster1" style="display:none;">0</iframe>
-<iframe id="cluster2" style="display:none;">1</iframe>
-<iframe id="cluster3" style="display:none;">2</iframe>
-<iframe id="cluster4" style="display:none;">3</iframe>
-<iframe id="cluster5" style="display:none;">4</iframe>
-<iframe id="cluster6" style="display:none;">5</iframe>
-<iframe id="cluster7" style="display:none;">6</iframe>
+<iframe frameborder="no" border="0" marginwidth="0" id="cluster0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/sentiments_category.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" id="cluster1" style="display:none;" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/sentiments_category.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" id="cluster2" style="display:none;" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/sentiments_category.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" id="cluster3" style="display:none;" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/sentiments_category.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" id="cluster4" style="display:none;" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/sentiments_category.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" id="cluster5" style="display:none;" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/sentiments_category.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" id="cluster6" style="display:none;" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/sentiments_category.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" id="cluster7" style="display:none;" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/sentiments_category.html"></iframe>
+
 <script>
 function checkDisplay(sel) {
     for(var i=0; i<8;i++){
