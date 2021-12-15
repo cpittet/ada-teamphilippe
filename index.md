@@ -96,7 +96,6 @@ Finally, we force each clusters to contain at least 2'000 people so that the num
 We start by seeing how the different people are distributed in the clusters.
 <img src="figures/pie_continent.png"/>
 <img src="figures/pie_sex.png"/>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/bar_plot_proportion.html"></iframe>
 From the above information and plots, we can see that our clustering works pretty well and the clusters are almost all interpretable. To go a bit further, we will now analyse each cluster separately.
 - cluster 0 :
 Mainly composed of women, this cluster corresponds to the television professions, more specifically artists, and gathers ~60% of the total number of women.
@@ -114,7 +113,10 @@ This cluster consists mostly of male journalist from America.
 Here, we have the second cluster of women which gathers ~35% of the total number of women. We can also see that the professions in this cluster are politicians and artists.
 - cluster 7 & 8 :
 Unfortunately, these two clusters are really similar and are composed of politician men from America. 
+
 The most interesting points in this clustering analysis is that the women are extremely well separated from the men (see cluzster 0 and 6). Also, we can see that our dataset is really biased toward actors (or movie professions), politicians and athletes while the other professions are under-represented.
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/bar_plot_proportion.html"></iframe>
 
 As before, we continue by seeing if there is a cluster which contain more quotes than others. 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/prop_clusters.html"></iframe>
