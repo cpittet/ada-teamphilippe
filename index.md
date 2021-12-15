@@ -113,7 +113,7 @@ We start by seeing how the different people are distributed in the clusters.
     <option value="7">Cluster 7</option>
 </select>
 <br>
-<iframe frameborder="no" border="0" marginwidth="0" id="cluster0" style="display:block;"marginheight="0" width="100%" height="650" allowfullscreen="true" src="figures/cluster_distribution_0.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" id="cluster0" style="display:block;" marginheight="0" width="100%" height="650" allowfullscreen="true" src="figures/cluster_distribution_0.html"></iframe>
 <iframe frameborder="no" border="0" marginwidth="0" id="cluster1" style="display:none;" marginheight="0" width="100%" height="650" allowfullscreen="true" src="figures/cluster_distribution_1.html"></iframe>
 <iframe frameborder="no" border="0" marginwidth="0" id="cluster2" style="display:none;" marginheight="0" width="100%" height="650" allowfullscreen="true" src="figures/cluster_distribution_2.html"></iframe>
 <iframe frameborder="no" border="0" marginwidth="0" id="cluster3" style="display:none;" marginheight="0" width="100%" height="650" allowfullscreen="true" src="figures/cluster_distribution_3.html"></iframe>
