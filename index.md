@@ -91,8 +91,18 @@ From the last plot, we can see that the above intuition about Asia is confirmed 
 #### Clustering<a name="cluser_cluser"></a>
 Our final try is to let a clustering algorithm run and see if, based only on peoples' demographic attributes, it can create clusters grouping people talking mostly positively or negatively about Mark or Facebook in the quotes. To do so, the clustering algorithm will use demographic attributes associated to the quoter. These information were colected from Wikidata. To be more precise, to compute the distance between two quoters, we use their age, nationality, profession, religion and gender. The other attributes collected from Wikidata were not set in enough quoter to be able to use them. As they were a lot of quoters, we choose to oblige all the attributes so that we can get a more meaniningful distance as well as reducing the number of quoters we need to process.
 
-Finally, we force each clusters to contain at least 2'000 people so that the number of contained in each clusters is sufficient enough so that our subsequent analyses can be valuable. The total number of clusters outputed by the algorithm is 9. As before, we start by seeing if there is a cluster which contain more quotes than others. 
+Finally, we force each clusters to contain at least 2'000 people so that the number of contained in each clusters is sufficient enough so that our subsequent analyses can be valuable. The total number of clusters outputed by the algorithm is 9. 
 
+We start by seeing how the different people are distributed in the clusters.
+<img src="figures/pie_continent.png"/>
+<img src="figures/pie_sex.png"/>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/bar_plot_proportion.html"></iframe>
+
+
+
+
+
+As before, we continue by seeing if there is a cluster which contain more quotes than others. 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/prop_clusters.html"></iframe>
 
 The first thing we can see is that cluster 4 and 6 have in general less quotes than any other cluster. Then, come clusters 2,3,5,7,8. Finally, cluster 0 and 1 tend to speaks more about Facebook and Mark Zuckerberg. 
