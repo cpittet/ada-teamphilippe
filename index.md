@@ -115,15 +115,15 @@ Let's now look in deeper details about which type of person is contained in each
     <option value="8">Cluster 8</option>
 </select>
 <br>
-<iframe frameborder="no" border="0" marginwidth="0" id="cluster0" style="display:block;" marginheight="0" width="100%" height="670" allowfullscreen="true" src="figures/cluster_distribution_0.html"></iframe>
-<iframe frameborder="no" border="0" marginwidth="0" onload="setDisplayNone('1')" id="cluster1" marginheight="0" width="100%" height="670" allowfullscreen="true" src="figures/cluster_distribution_1.html"></iframe>
-<iframe frameborder="no" border="0" marginwidth="0" onload="setDisplayNone('2')" id="cluster2" marginheight="0" width="100%" height="670" allowfullscreen="true" src="figures/cluster_distribution_2.html"></iframe>
-<iframe frameborder="no" border="0" marginwidth="0" onload="setDisplayNone('3')" id="cluster3" marginheight="0" width="100%" height="670" allowfullscreen="true" src="figures/cluster_distribution_3.html"></iframe>
-<iframe frameborder="no" border="0" marginwidth="0" onload="setDisplayNone('4')" id="cluster4" marginheight="0" width="100%" height="670" allowfullscreen="true" src="figures/cluster_distribution_4.html"></iframe>
-<iframe frameborder="no" border="0" marginwidth="0" onload="setDisplayNone('5')" id="cluster5" marginheight="0" width="100%" height="670" allowfullscreen="true" src="figures/cluster_distribution_5.html"></iframe>
-<iframe frameborder="no" border="0" marginwidth="0" onload="setDisplayNone('6')" id="cluster6" marginheight="0" width="100%" height="670" allowfullscreen="true" src="figures/cluster_distribution_6.html"></iframe>
-<iframe frameborder="no" border="0" marginwidth="0" onload="setDisplayNone('7')" id="cluster7" marginheight="0" width="100%" height="670" allowfullscreen="true" src="figures/cluster_distribution_7.html"></iframe>
-<iframe frameborder="no" border="0" marginwidth="0" onload="setDisplayNone('8')" id="cluster8" marginheight="0" width="100%" height="670" allowfullscreen="true" src="figures/cluster_distribution_8.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" id="cluster0" style="display:block;" marginheight="0" width="100%" height="700" allowfullscreen="true" src="figures/cluster_distribution_0.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" onload="setDisplayNone('1')" id="cluster1" marginheight="0" width="100%" height="700" allowfullscreen="true" src="figures/cluster_distribution_1.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" onload="setDisplayNone('2')" id="cluster2" marginheight="0" width="100%" height="700" allowfullscreen="true" src="figures/cluster_distribution_2.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" onload="setDisplayNone('3')" id="cluster3" marginheight="0" width="100%" height="700" allowfullscreen="true" src="figures/cluster_distribution_3.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" onload="setDisplayNone('4')" id="cluster4" marginheight="0" width="100%" height="700" allowfullscreen="true" src="figures/cluster_distribution_4.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" onload="setDisplayNone('5')" id="cluster5" marginheight="0" width="100%" height="700" allowfullscreen="true" src="figures/cluster_distribution_5.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" onload="setDisplayNone('6')" id="cluster6" marginheight="0" width="100%" height="700" allowfullscreen="true" src="figures/cluster_distribution_6.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" onload="setDisplayNone('7')" id="cluster7" marginheight="0" width="100%" height="700" allowfullscreen="true" src="figures/cluster_distribution_7.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" onload="setDisplayNone('8')" id="cluster8" marginheight="0" width="100%" height="700" allowfullscreen="true" src="figures/cluster_distribution_8.html"></iframe>
 <script>
 function checkDisplay(sel) {
     for(var i=0; i<8;i++){
