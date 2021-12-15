@@ -10,7 +10,7 @@ Do we put an image on the whole width behind the title ?
 <!-- An introduction about project and why it could be useful.
 Describe where the data comes from 
 One or two sentences on how to extract the data-->
-<script>alert("test");</script>
+
 In February 2004, at Harvard University, a student created a website allowing other students to discuss, exchange ideas, publish their best jokes. 
 This small project quickly spread to the campus, then to other universities, and finally to the whole world. This is how Mark Zuckerberg became a billionaire in a few years.
 However, like any famous person, he is often exposed to a lot of criticism, especially in recent years. It is important that each person can express himself freely by giving his opinion on the decisions and actions of multinationals. 
@@ -115,6 +115,38 @@ Here, we have the second cluster of women which gathers ~35% of the total number
 - cluster 7 & 8 :
 Unfortunately, these two clusters are really similar and are composed of politician men from America. 
 The most interesting points in this clustering analysis is that the women are extremely well separated from the men (see cluzster 0 and 6). Also, we can see that our dataset is really biased toward actors (or movie professions), politicians and athletes while the other professions are under-represented.
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<select  class="form-control col-2" aria-label="" onchange="checkDisplay(this)">
+    <option value="0" selected="selected">Cluster 0</option>
+    <option value="1">Cluster 1</option>
+    <option value="2">Cluster 2</option>
+    <option value="3">Cluster 3</option>
+    <option value="4">Cluster 4</option>
+    <option value="5">Cluster 5</option>
+    <option value="6">Cluster 6</option>
+    <option value="7">Cluster 7</option>
+</select>
+<br>
+<iframe id="cluster0"></iframe>
+<iframe id="cluster1" style="display:none;">0</iframe>
+<iframe id="cluster2" style="display:none;">1</iframe>
+<iframe id="cluster3" style="display:none;">2</iframe>
+<iframe id="cluster4" style="display:none;">3</iframe>
+<iframe id="cluster5" style="display:none;">4</iframe>
+<iframe id="cluster6" style="display:none;">5</iframe>
+<iframe id="cluster7" style="display:none;">6</iframe>
+<script>
+function checkDisplay(sel) {
+    for(var i=0; i<8;i++){
+        document.getElementById("cluster"+i).style.display="none";
+    
+    }
+    document.getElementById("cluster"+sel.value).style.display="block"
+ }
+</script>
+
 
 As before, we continue by seeing if there is a cluster which contain more quotes than others. 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/prop_clusters.html"></iframe>
