@@ -95,31 +95,10 @@ Our final try is to let a clustering algorithm runs and see if, based only on pe
 Finally, we force each clusters to contain at least 2'000 people so that the size of each cluster is large enough for our subsequent analyses to be valuable. The total number of clusters found by the algorithm is 9. 
 
 We start by seeing how the different people are distributed in the clusters.
-<img src="figures/pie_continent.png"/>
-<img src="figures/pie_sex.png"/>
-From the above information and plots, we can see that our clustering works pretty well and the clusters are almost all interpretable. To go a bit further, we will now analyse each cluster separately.
-- Cluster 0 :
-Mainly composed of women, this cluster corresponds to the television professions, more specifically artists, and gathers ~60% of the total number of women.
-- Cluster 1 :
-Here, we can see that most of our cluster is composed of sportive men from America. 
-- Cluster 2 :
-This cluster is mostly composed of male footballers and football managers from the United Kingdom and gathers ~35% of the total number of Europeans.
-- Cluster 3 :
-Here, we have actors and a lot of movie professions from America.
-- Cluster 4 :
-This cluster is mainly composed of male politicians and artists from the United Kingdom and gathers ~20% of the total number of Europeans.
-- Cluster 5 :
-This cluster consists mostly of male journalists from America.
-- Cluster 6 :
-Here, we have the second cluster of women which gathers ~35% of the total number of women. We can also see that the professions in this cluster are politicians and artists.
-- Cluster 7 & 8 :
-Unfortunately, these two clusters are really similar and are composed of politician men from America. 
-
-The most interesting points in this clustering analysis is that the women are extremely well separated from the men (see cluzster 0 and 6). Also, we can see that our dataset is really biased toward actors (or movie professions), politicians and athletes while the other professions are under-represented.
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/bar_plot_proportion.html"></iframe>
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/global_distribution.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="650" allowfullscreen="true" src="figures/global_distribution.html"></iframe>
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -127,8 +106,8 @@ The most interesting points in this clustering analysis is that the women are ex
     <option value="0" selected="selected">Cluster 0</option>
     <option value="1">Cluster 1</option>
     <option value="2">Cluster 2</option>
-    <option value="3">Cluster 3</option>
-    <option value="4">Cluster 4</option>
+    <option value=""3">Cluster 3</option>
+    <option value=4">Cluster 4</option>
     <option value="5">Cluster 5</option>
     <option value="6">Cluster 6</option>
     <option value="7">Cluster 7</option>
@@ -152,6 +131,27 @@ function checkDisplay(sel) {
     document.getElementById("cluster"+sel.value).style.display="block"
  }
 </script>
+
+From the above information and plots, we can see that our clustering works pretty well and the clusters are almost all interpretable. To go a bit further, we will now analyse each cluster separately.
+- Cluster 0 :
+Mainly composed of women, this cluster corresponds to the television professions, more specifically artists, and gathers ~60% of the total number of women.
+- Cluster 1 :
+Here, we can see that most of our cluster is composed of sportive men from America. 
+- Cluster 2 :
+This cluster is mostly composed of male footballers and football managers from the United Kingdom and gathers ~35% of the total number of Europeans.
+- Cluster 3 :
+Here, we have actors and a lot of movie professions from America.
+- Cluster 4 :
+This cluster is mainly composed of male politicians and artists from the United Kingdom and gathers ~20% of the total number of Europeans.
+- Cluster 5 :
+This cluster consists mostly of male journalists from America.
+- Cluster 6 :
+Here, we have the second cluster of women which gathers ~35% of the total number of women. We can also see that the professions in this cluster are politicians and artists.
+- Cluster 7 & 8 :
+Unfortunately, these two clusters are really similar and are composed of politician men from America. 
+
+The most interesting points in this clustering analysis is that the women are extremely well separated from the men (see cluzster 0 and 6). Also, we can see that our dataset is really biased toward actors (or movie professions), politicians and athletes while the other professions are under-represented.
+
 
 
 As before, we continue by seeing if there is a cluster which contains more quotes than others. 
