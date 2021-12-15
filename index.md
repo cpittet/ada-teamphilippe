@@ -13,9 +13,27 @@ One or two sentences on how to extract the data
 
 # Sentiment analysis 
 ## Global result (Neygo)
-Explain global result about sentiment analysis on the quotes concerning Mark Zuckerberg.
-present the two main plots and say that we cannot say anyhting.
--> Cambridge analytica
+
+We began by doing an overall analysis of sentiment over time, specifically, we look at the proportions of each label (positive, negative, neutral) during each week. 
+The majority of quotes are positive (or neutral), so negative quotes are only a small fraction of all quotes in a given week.
+We also observe that the proportion of positive quotes decreases slightly around 2018-2019, negative quotes were increasing at the same time.
+This corresponds to the period when the Cambridge analytica scandal was revealed.
+
+[fig 1]
+
+We then look at the overall average scores during each week.
+As one might expect, the data are rather flat since we are averaging the different opinions and thus there is not much variance in the data. 
+We observe, however, that in general the sentiment analyzer tends to assign a rather high neutral score and the quotes tend to be more positive than negative on average.
+
+[fig 2]
+
+To finish with the overall observation, we noticed that the number of citations is not consistent over time. 
+The first observation is this high spike in early 2018.
+As preceded, This is when the Cambridge Analytica scandal exploded.
+As seen above, quotes were becoming more negative at this time as well. 
+There are also a few weeks with very few quotes from the source used to harvest the data.
+
+[fig 3]
 
 ## Clustering (Alessio)
 Decompose the analysis into smaller groups.
