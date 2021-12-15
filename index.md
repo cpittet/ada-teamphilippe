@@ -22,7 +22,7 @@ Next, we will profile the types of people issuing these quotes and analyze their
 Finally, for each of theses people catergories, we will determine if the impact of these positive and negative reviews is significant on Facebook's stock numbers over time.
 
 # Sentiment analysis<a name="sentiment"></a>
-## Global result (Neygo)
+## Global result
 
 We began by doing an overall analysis of sentiment over time, specifically, we look at the proportions of each label (positive, negative, neutral) during each week. 
 The majority of quotes are positive (or neutral), so negative quotes are only a small fraction of all quotes in a given week.
@@ -43,7 +43,7 @@ As preceded, This is when the Cambridge Analytica scandal exploded.
 As seen above, quotes were becoming more negative at this time as well. 
 There are also a few weeks with very few quotes from the source used to harvest the data.
 
-[fig 3]
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/nb_quotes_by_period.html"></iframe>
 
 ## Clustering 
 
