@@ -10,7 +10,7 @@ Do we put an image on the whole width behind the title ?
 <!-- An introduction about project and why it could be useful.
 Describe where the data comes from 
 One or two sentences on how to extract the data-->
-
+<script>alert("test");</script>
 In February 2004, at Harvard University, a student created a website allowing other students to discuss, exchange ideas, publish their best jokes. 
 This small project quickly spread to the campus, then to other universities, and finally to the whole world. This is how Mark Zuckerberg became a billionaire in a few years.
 However, like any famous person, he is often exposed to a lot of criticism, especially in recent years. It is important that each person can express himself freely by giving his opinion on the decisions and actions of multinationals. 
