@@ -175,15 +175,18 @@ other features such as the number of quotes made by women seem to exhibit a slig
 
 To find more accurate insights about these possible trends, let's consider the coefficients obtained 
 with a linear regression taking as input all the 6 features above and as output the (delayed) average stock price.
-The statistically significant coefficients at level 5\% are shown in color, the others in gray. Over the 6 features,
-only 3 are statistically significant at level 5\%. Surprisingly, the coefficient associated to the negative
+The statistically significant coefficients at level 5% are shown in color, the others in gray. Over the 6 features,
+only 3 are statistically significant at level 5%. Surprisingly, the coefficient associated to the negative
 sentiment for the men is positive. This means that the more negative the men quotes are the higher the stock prices
 tend to be.
 
 Women quotes are a good sign for the price whereas the number of men quotes is a bad omen for the stock price.
 Indeed, the number of quotes made by men is negative whereas the one for women is positive.
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="600" allowfullscreen="true" src="figures/coeffs_gender.html"></iframe> 
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="300" allowfullscreen="true" src="figures/coeffs_gender.html"></iframe>
+
+Does the model fit well the data ? Our linear regression model reaches a $R^2$ score of 0.36. So it is able
+to capture more variance than a constant model.
 
 #### Where do they come from ?
 
@@ -191,17 +194,19 @@ Comparably to the analysis on genders, the plots of the stock price w.r.t. each 
 trends, and we omit it here for clarity questions.
 
 Similarly to the regression on genders, the only features that matters here are the number of quotes and the negative
-score but the positive score is not relevant (not statistically significant at level 5\%). Again, there is
+score but the positive score is not relevant (not statistically significant at level 5%). Again, there is
 some contrast between the number of quotes in different groups. The more American quotes there is, the lower 
 the price tend to be whereas the more quotes there are in Europe or Asia, the higher the price is likely to be.
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="600" allowfullscreen="true" src="figures/coeffs_continent.html"></iframe>
 
+As before, this fit has a $R^2$ score of 0.33.
+
 #### How old are they ? 
 
 Here we look at the different ranges of age in the authors. Namely, we consider the ranges [0-25], [26-50], [51-75], [76+].
 As what was done in the two previous analysis, we do not show the plots of the relationships between the features and the stock prices
-since they are very similar and do not add much insight.
+since they are very similar and do not add much insights.
  
 We don't change a winning team... it is again the count of quotes and the negative score that matter most. However,
 the positive score for the 76+ authors seem to be relevant as well. But, as surprisingly as before, the corresponding
@@ -217,11 +222,27 @@ A contrast in the count of quotes also emerges. Young people seem to be more cri
 Indeed, the coefficient for the count of quotes by young people (0-25) is negative whereas the one for the older people
 (76+) is positive. This is in concordance with our previous [analysis](#global-result-neygo).
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="800" allowfullscreen="true" src="figures/coeffs_age.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="600" allowfullscreen="true" src="figures/coeffs_age.html"></iframe>
+
+For this model, the $R^2$ score is 0.28, so it captures more variance in the data than the constant model.
 
 #### Who are they ?
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="1000" allowfullscreen="true" src="figures/coeffs_cluster.html"></iframe>
+Similarly to what is done for the other analyses, we omit the features plots for presentations reasons.
+
+Cluster containing mainly women, such as clusters 0 and 6, tend to have a positive influence via their count coefficient.
+The count of quotes of American men however rather negative for the stock price as we can see in clusters 1 and 5. This is
+what we also observed in the analyses about [continents](#where-do-they-come-from-) and [gender](#analysis-by-gender).
+
+Let's now try to investigate which professions are the most influential. We could expect that professions such as economists,
+politicians weigh more in the game than artists, athletes or similar. For example, consider the coefficients corresponding
+to the negative score of clusters 1, 5 and 7, which are statistically significant at level 5%. These [clusters](#clustering) mainly contains
+American male athletes, American male journalists and American male politicians, respectively. By inspecting
+the magnitude of these coefficients, we can deduce that the larger ones are more important for the stock price.
+In our case, the most relevant profession is journalist, followed by politician and finally athletes. This is comparable
+to what we expected.
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="750" allowfullscreen="true" src="figures/coeffs_cluster.html"></iframe>
 
 # Conclusion (Feez)
 Answer to the question
