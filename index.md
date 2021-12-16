@@ -320,7 +320,8 @@ Finally, Meta's market analysis revealed that there is an inverse correlation be
 <style>
 #cursive{
   font-family:'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive;
-  font-size:16px;
+  font-size:24px;
+  text-align:center;
 }
 </style>
 <span id="cursive">Robin Plumey, Alessio Verardo, Florian Constantin, Cyrille Pittet</span>
