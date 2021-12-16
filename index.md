@@ -65,7 +65,7 @@ We can also see two big spikes to low score in the plot about the mean compound 
 #### Clustering based on gender<a name="cluster_gender"></a>
 Let us now look at the quotes by analysing them from a gender perspective. Among the quoters of Mark Zuckerberg, there are a lot of different genders. To be precise, we get exactly 18 different genders from the data. As before, let us first see the proportion of each gender over time among the quoters of Mark. 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/gender_prop.html"></iframe>
-==> No category other in the plot ?
+
 We choose to group genders other than men or women into the "Other" category as we suspect them to be not so represented in the data set. From the above plot, we can indeed see that even by grouping all of them into the same category, they represent about 0% of the quotes at any time, i.e. they are under-represented at any point in time. For this reason, we chose to exclude them in our subsequent analyses as the results won't have much value with such a small sample size. We can also see that we have a large bias towards men since they represent 80% of the quotes at any point in time. 
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/gender_mean.html"></iframe><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/gender_box.html"></iframe>
@@ -317,7 +317,7 @@ First, the reviews in the newspapers are rather neutral or positive. There is st
 Second, we separated the quotes by different groups of people. We saw that young people under 25 tend to speak more positively about Mark Zuberberg and people between 51 and 75 tend to speak more negatively about him.
 In addition, women speak more positively than men about the billionaire. When analyzing where the authors of the quotes come from, we observed that Asians tend to be a bit more critical towards the American giant, while Europeans are on average more favorable.
 We also saw that grouping data by similar demographic values can reveal differences in overall sentiments. For example, American politicians are less positive than British athletes.
-Finally, Meta's market analysis revealed that there is an inverse correlation between the number of negative quotes and the stock price. Therefore, talking negatively about someone will not necessarly make him less wealthy. ---------------Je sais pas trop quoi tirer de la partie stock market ----------------
+Finally, Meta's market analysis revealed that there is an inverse correlation between the number of negative quotes and the stock price. Therefore, talking negatively about someone will not necessarly make him less wealthy.
     
 <!--
 # Introduction
