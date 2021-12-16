@@ -239,7 +239,7 @@ The statistically significant coefficients at level 5% are shown below in color,
 only 3 are statistically significant at level 5%. You probably imagine that if people are speaking favorably then this would
 have a positive effect on the stock price and vice-versa. But surprisingly, the coefficient associated to the negative
 sentiment for the men is positive. This means that the more negative the men quotes are the higher the stock prices
-tend to be. A hypothesis for this could be that since [most of the quotes convey a rather favorable opinion](#global-result-a-namesentiment_globala)
+tend to be. A hypothesis could be that since [most of the quotes convey a rather favorable opinion](#global-result-a-namesentiment_globala)
 they do not contain much information. However, since the pessimistic quotes are rarer, they carry a stronger signal.
 
 Women quotes are a good sign for the price whereas the number of men quotes is a bad omen for the stock price.
@@ -253,7 +253,7 @@ to capture more variance than a constant model.
 #### Where do they come from ?
 
 Comparably to the analysis on genders, the plots of the stock price w.r.t. each of the features do not exhibit very clear
-trends, and we omit it here for clarity questions.
+trends, and we omit it here for clarity reasons.
 
 Similarly to the regression on genders, the only features that matters here are the number of quotes and the negative
 score but the positive score is not relevant (not statistically significant at level 5%). Again, there is
@@ -278,11 +278,11 @@ We can also look at the magnitude of the significant coefficient for the negativ
 would mean that this group is more "influential" or gives stronger indication that the stock price will be high (as they are all
 positive). For example here, the most relevant group would be the 26-50, which tend to be the most active and powerful
 in the industry in general, seem to weigh more in the behavior of the stock prices than the other 2 groups. This also
-reflect the fact that we have a majority of people in this range of age in our dataset.
+reflects the fact that we have a majority of people in this range of age in our dataset.
 
 A contrast in the count of quotes also emerges. Young people seem to be more critical in their opinions than older people.
 Indeed, the coefficient for the count of quotes by young people (0-25) is negative whereas the one for the older people
-(76+) is positive. This is in concordance with our previous [analysis](#global-result-a-namesentiment_globala).
+(76+) is positive. This is in concordance with our previous [analysis](#cluser_ages).
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="600" allowfullscreen="true" src="figures/coeffs_age.html"></iframe>
 
@@ -312,7 +312,7 @@ First, the reviews in the newspapers are rather neutral or positive. There is st
 Second, we separated the quotes by different groups of people. We saw that young people under 25 tend to speak more positively about Mark Zuckerberg and people between 51 and 75 tend to speak more negatively about him.
 In addition, women speak more positively than men about the billionaire. When analyzing where the authors of the quotes come from, we observed that Asians tend to be a bit more critical towards the American giant, while Europeans are on average more favorable.
 We also saw that grouping data by similar demographic values can reveal differences in overall sentiments. For example, American politicians are less positive than British athletes.
-Finally, Meta's market analysis revealed that there is an inverse correlation between the number of negative quotes and the stock price. Therefore, talking negatively about someone will not necessarly make him less wealthy.
+Finally, Meta's market analysis revealed that there is an inverse correlation between the negativity of the quotes and the stock price. Therefore, talking negatively about someone will not necessarly make him less wealthy.
     
 <style>
 #cursive{
