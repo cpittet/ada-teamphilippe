@@ -1,8 +1,10 @@
 ---
+
 layout: page
 title: Opinions in quotes and success : do they relate ?
 subtitle: Data Story
-    ---
+
+---
 
 # Abstract & introduction
 <!-- An introduction about project and why it could be useful.
