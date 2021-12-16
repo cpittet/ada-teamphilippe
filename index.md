@@ -46,7 +46,7 @@ As already explained in the [sentiment analysis](#sentiment_global) part, if we 
 To overcome this problem, we thought that it might be interesting to split the people into different clusters, based on different personal characteristics, to see if we can spot any trend where a group of people always talks positively or negatively about Mark Zuckerberg or Facebook. 
 
 #### Clustering on ages <a name="cluser_ages"></a>
-The first idea for clustering people we thought of is to separate people based on their ages at the moment were the quote was made. Our a priori thought is that younger people should talk  more positively about Facebook or his creator as they are more susceptible to use the social network in a daily basis whereas older people might be more suspicious about this "new technology". 
+The first idea for clustering people we thought of is to separate people based on their ages at the moment when the quote was made. Our a priori thought is that younger people should talk  more positively about Facebook or his creator as they are more susceptible to use the social network in a daily basis whereas older people might be more suspicious about this "new technology". 
 
 To see if this hypothesis is verified or not, let's look at the data and what they tell us. We choose to arbitrarily split the dataset into 4 different ranges of ages: [0,25], [25-50], [51-75] and [76-125]. We start to analyse the split on ages by looking at what proportion of the quotes do each category represents.
 
