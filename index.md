@@ -204,9 +204,9 @@ is between 0 and 1 but the number of quotes may be in the hundreds), we standard
 
 
 Note that here the goal is not exactly to predict very accurately the stock price of the upcoming week based
-on the current week quotes but rather to see if there trends among certain groups that emerges. To accurately
+on the current week quotes but rather to see if there are trends among certain groups that emerges. To accurately
 predict the stock prices, we would probably need more complex models as well as other features. However, more complex models
-quickly becomes less interpretable (black-box models) and this would prevent us to extract the trends
+quickly becomes less interpretable (black-box models) and this would prevent us to interpret the trends
 we look for. So a simple linear regression is well suited for this task.
 
 
