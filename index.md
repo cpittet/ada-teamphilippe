@@ -41,7 +41,7 @@ There are also a few weeks with very few quotes from the source used to harvest 
 
 ## Clustering 
 
-As already explained in the [sentiment analysis](#sentiment_global) part, when looking at the mean compound score, considering the sentiments of all the people talking about Mark Zuckerberg simultaneously doesn't give much information. 
+As already explained in the [sentiment analysis](#sentiment_global) part, if we look at the mean compound score, by considering the sentiments of all the people talking about Mark Zuckerberg simultaneously, this doesn't give much information. 
 
 To overcome this problem, we thought that it might be interesting to split the people into different clusters, based on different personal characteristics, to see if we can spot any trend where a group of people always talks positively or negatively about Mark Zuckerberg or Facebook. 
 
@@ -52,7 +52,7 @@ To see if this hypothesis is verified or not, let's look at the data and what th
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/age_prop.html"></iframe>
 
-From the above plot, we can see that people between 26 and 50 years are the ones making most of the quotes about Mark and Facebook. Indeed, by looking at the data, we can see that they represent around 50% of the quotes over time. Then, come people from 51 to 75 years with around 30% of the quotes. We can see another bias in the dataset, i.e. almost all the quotes are from people from 26-75 whereas the other ages are really under-represented.
+From the above plot, we can see that people between 26 and 50 years are the ones making most of the quotes about Mark and Facebook. Indeed, by looking at the data, we can see that they represent around 50% of the quotes over time. Then, come people from 51 to 75 years with around 30% of the quotes. 
 
 Let us now interest ourselves in the evolution of the mean compound score of each category of ages over time. 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/age_mean.html"></iframe><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/age_box.html"></iframe>
