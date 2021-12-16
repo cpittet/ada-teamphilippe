@@ -26,49 +26,49 @@ To assign a sentiment to each quote, we first use a pre-existing sentiment analy
 Therefore, we assign a sentiment label to each quote by thresholding the compound score. 
 We began by doing an overall analysis of sentiment over time. Specifically, we look at the proportions of each sentiment (positive, negative, neutral) during each week. 
 
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/sentiments_category.html"></iframe>
+
 The majority of quotes are positive (or neutral), henceforth negative quotes represent only a small fraction of all the quotes in a given week.
 We also observe that the proportion of positive quotes decreases slightly around 2018-2019, negative quotes were increasing at the same time.
 This corresponds to the period when the Cambridge analytica scandal was revealed extensively in the media.
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/sentiments_category.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/nb_quotes_by_period.html"></iframe>
 
 To finish with the overall inspection, we noticed that the number of quotes is not consistent over time. 
 The first observation is this high spike in early 2018.
-As already explained earlier, that's when the Cambridge Analytica scandal exploded in the media, therefore it makes sense than the number of quotes is also scaling up.
-There are also a few weeks with very few quotes from the source used to harvest the data.
-
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/nb_quotes_by_period.html"></iframe>
+As already explained earlier, that's when the Cambridge Analytica scandal exploded in the media, therefore it makes sense that the number of quotes is also scaling up.
+There are also some periods form 2015 to the start of 2017 were there isn't much data, due to the Quotebank dataset having only a few quotes during theses intervals.
 
 ## Clustering 
 
-As already explained in the [sentiment analysis](#sentiment_global) part, if we look at the mean compound score, by considering the sentiments of all the people talking about Mark Zuckerberg simultaneously, this doesn't give much information. 
+If we look at the mean compound score described in [sentiment analysis](#sentiment_global), by considering the sentiments of all the people talking about Mark Zuckerberg simultaneously, this doesn't give much information. 
 
-To overcome this problem, we thought that it might be interesting to split the people into different clusters, based on different personal characteristics, to see if we can spot any trend where a group of people always talks positively or negatively about Mark Zuckerberg or Facebook. 
+To overcome this problem, we thought that it might be interesting to split the people into different clusters, based on different personal characteristics, to see if we can spot trends where some groups of people talk more positively or negatively about Mark Zuckerberg or Facebook. 
 
 #### Clustering on ages <a name="cluser_ages"></a>
-The first idea for clustering people we thought of is to separate people based on their ages at the moment when the quote was made. Our a priori thought is that younger people should talk  more positively about Facebook or his creator as they are more susceptible to use the social network in a daily basis whereas older people might be more suspicious about this "new technology". 
+The first idea for clustering people we came up with is to separate people based on their ages at the moment when the quote was made. Our a priori thought is that younger people should talk  more positively about Facebook or his creator as they are more susceptible to use the social network in a daily basis whereas older people might be more suspicious about this "new technology". 
 
-To see if this hypothesis is verified or not, let's look at the data and what they tell us. We choose to arbitrarily split the dataset into 4 different ranges of ages: [0,25], [26-50], [51-75] and [76-125]. We start to analyse the split on ages by looking at what proportion of the quotes do each category represent.
+To see if this hypothesis is verified or not, let's look at the data and what they tell us. We choose to arbitrarily split the dataset into 4 different ranges of ages: [0,25], [26-50], [51-75] and [76-125]. We start to analyse the split on ages by looking at what proportion of the quotes each category represents.
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/age_prop.html"></iframe>
 
-From the above plot, we can see that people between 26 and 50 years are the ones making most of the quotes about Mark and Facebook. Indeed, by looking at the data, we can see that they represent around 50% of the quotes over time. Then, come people from 51 to 75 years with around 30% of the quotes. 
+According to the plot above, we can see that people between 26 and 50 years are the ones making most of the quotes about Mark and Facebook. Indeed, by looking at the data, we can see that they represent around 50% of the quotes over time. Then come people from 51 to 75 years with around 30% of the quotes. 
 
-Let us now interest ourselves in the evolution of the mean compound score of each category of ages over time. 
+Let us now have a look at the evolution of the mean compound score of each age category over time. 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/age_mean.html"></iframe><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/age_box.html"></iframe>
-From the first above plot, we can see that in general the category [0, 25] tends to speak in a more positive way than any other categories. This visual difference is in fact verified by looking at the box plot about the mean compound score. It can also be shown that this difference is indeed statistically significant at level 5%. The second thing we can read from the first plot is that the category [51-75] tends to speak more negatively about Mark or Facebook, than any other category of ages. Again, this difference can be shown to be statistically significant. 
+From the first plot above, we can see that in general the category [0, 25] tends to speak in a more positive way than any other categories. This visual difference is in fact verified by looking at the box plot about the mean compound score. It can also be shown that this difference is indeed statistically significant at level 5%. The second thing we can read from the first plot is that the category [51-75] tends to speak more negatively about Mark or Facebook, than any other category of ages. Again, this difference can be shown to be statistically significant. 
 
-We can also see two big spikes to low score in the plot about the mean compound score. The first one is not very significant since it is caused by only 2 persons. The second spike, on the other hand, corresponds to the [0-25] category and occurred in November 2016. Although that it is only caused by 14 people, it is known that Quotebank collect almost no data during this period of time. Furthermore, it is also known that, at that point in time, severals reports show that Cambridge Analytica used personal informations of 87 millions Facebook account without their consent (see  <a href="https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal">Facebook - Cambridge Analytica scandal</a>). This information would have influenced the 2016 US election and maybe other important events after, such as the Brexit. It will later (in 2018) be revelead in all the media that Facebook have let a scientist access to an API to collect data from Facebook. We therefore think that this very low average score at that particular point in time from the younger people (maybe the more susceptible to use social networks) represents their anger toward Facebook following this scandal. And even though 14 quotes is not enough, we can suspect that at this time, most of the person using Facebook in a daily manner may feel the same way after this revelation. We will see that such a negative spike in the sentiments score for November 2016 will come back several times during our analyses.
+We can also see two big spikes to low scores in the plot about the mean compound score. The first one is not very significant since it is caused by only 2 persons. The second spike, on the other hand, corresponds to the [0-25] category and occurred in November 2016. Although that it is only caused by 14 people, it is known that Quotebank collect almost no data during this period of time. Furthermore, it is also known that, at that point in time, severals reports show that Cambridge Analytica used personal informations of 87 millions Facebook account without their consent (see  <a href="https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal">Facebook - Cambridge Analytica scandal</a>). This information would have influenced the 2016 US election, and other important events afterwards, such as the Brexit. It will later (in 2018) be revelead in the international media that Facebook have let a scientist access to an API to collect data from Facebook. We therefore think that this very low average score at that particular point in time from the younger people (maybe the more susceptible to use social networks) represents their anger toward Facebook following this scandal. And even though 14 quotes is not enough, we can suspect that at this time, most of the person using Facebook in a daily manner may feel the same way after this revelation. We will see that such a negative spike in the sentiments score for November 2016 will come back several times during our analyses.
 
 #### Clustering based on gender<a name="cluster_gender"></a>
-Let us now look at the quotes by analysing them from a gender perspective. Among the quoters of Mark Zuckerberg, there are a lot of different genders. To be precise, we get exactly 18 different genders from the data. As before, let us first see the proportion of each gender over time among the quoters of Mark. 
+Let us now look at the quotes by analysing them from a gender perspective. Among the quoters of Mark Zuckerberg, there are a lot of different genders. To be precise, we get exactly 18 different genders from the data. As before, let us first see the proportion of each gender over time among Mark quoters. 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/gender_prop.html"></iframe>
 
-We choose to group genders other than men or women into the "Other" category as we suspect them to be not so represented in the data set. From the above plot, we can indeed see that even by grouping all of them into the same category, they represent about 0% of the quotes at any time, i.e. they are under-represented at any point in time. For this reason, we chose to exclude them in our subsequent analyses as the results won't have much value with such a small sample size. We can also see that we have a large bias towards men since they represent ~80% of the quotes at any point in time. 
+We choose to group genders other than men or women into the "Other" category as we suspect them to be not so represented in the data set. From the above plot, we can indeed see that even by grouping all of them into the same category, they represent about 0% of the quotes at any time, i.e. they are under-represented at any point in time. For this reason, we chose to remove them in our subsequent analyses as the results won't have much value with such a small sample size. We can also see that we have a large bias towards men since they represent ~80% of the quotes at any point in time. 
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/gender_mean.html"></iframe><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/gender_box.html"></iframe>
 
-By looking at the mean compound score, the first thing that stands out is that the curve for the women tends to be above the curve of men almost all the time. The only exception is in November 2016 where the small number of quotes we have from women at this date gives us the overall lowest mean compound score of all time. Again, this date corresponds to the beginning of the Facebook-Cambridge Analytica scandal. However, men and women tend to be mostly neutral (or a bit biased toward positive) over time. The mean compound score for the two groups is shown in the box plot and we can see that women have a mean score a bit higher (difference of 0.07) than men over the whole period of quotes. The difference in the sentiment score between the men and women is statistically significant at level 5%. 
+By looking at the mean compound score, the first thing that stands out is that the curve for the women tends to be above the curve of men almost all the time. The only exception is in November 2016 where the small number of quotes we have from women at this date gives us the overall lowest mean compound score of all time. Again, this date corresponds to when Facebook data was used by Cambridge Analytica to help Donald Trump's election. However, men and women tend to be mostly neutral (or a bit biased toward positive) over time. The mean compound score for the two groups is shown in the box plot and we can see that women have a mean score a bit higher (difference of 0.07) than men over the whole period of time. The difference in the sentiment score between the men and women is statistically significant at level 5%. 
 
 
 #### Clustering based on continent<a name="cluster_continent"></a>
@@ -90,8 +90,8 @@ Finally, we force each cluster to contain at least 2'000 persons so that the siz
 
 Earlier in this article, we saw gender and continent characteristics at a quote level, i.e. we inspect the distribution of the quotes by continent and gender but at the quote level. Here, we change our vision and we rather look at them from a person persepective. 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="700" allowfullscreen="true" src="figures/global_distribution.html"></iframe>
-In the plot, we can see the different distributions of the attributes of the quoters of Mark Zuckerberg. We choose to only display the first 5 nationalities and occupations as the other ones group a tiny percentages of the population. 
-From the above plot, we can see that the most represented professions in the datasets are actors (6.22%) and politicians (7.05%). Furthermore, as already mentioned, most of the quoter comes from the United States and therefore from America which explain the two large percentages we got in the nationality and continent pie charts. 
+In the plot, we can see the different distributions of the attributes of Mark Zuckerberg quoters. We choose to only display the first 5 nationalities and occupations as the other ones gather a tiny percentages of the population. 
+From the plot above, we can see that the most represented professions in the datasets are actors (6.22%) and politicians (7.05%). Furthermore, as already mentioned, most of the quoter comes from the United States and therefore from America which explain the two large percentages we got in the nationality and continent pie charts. 
 We can also see that the second nationality in terms of number of quoters is the United Kingdom which explains such a high score for the Europeans. As already mentioned in this article, the number of men is much higher than the number of women.
 
 Let's now look in deeper details about which type of person is contained in each cluster. (Note that using the dropdown, you are able to explore each cluster)
@@ -131,22 +131,22 @@ function setDisplayNone(id){
 
 
 </script>
-From the above plots, we can see that our clustering works well and the clusters are almost all interpretable. Using the above decomposition of each cluster, we can make the following comments.
-In cluster 0, we can observe that it is almost exclusively composed of women which have movie and television related profession (actress and model) coming from the United States of America. 
+By observing the plots above, we can see that our clustering gathers similar people together as intended and the clusters are almost all interpretable. Using the above decomposition of each cluster, we can make the following comments.
+In cluster 0, we can observe that it is almost exclusively composed of women which have movie and television related professions (actress and model) coming from the United States of America. 
 In cluster 1, we got athlete men from the United States. Athletes from various sports from the United Kingdom populate cluster 2. In cluster 3, we can see that most of the quoters are men with cinema related professions from the USA and also a bit from India.
 Cluster 4 is perhaps the less interpretable cluster but it gathers men from the United Kingdom in majority. Cluster 5 groups mainly people with a writing related profession such as writer, screenwriter or journalist, coming from America. 
 The three last clusters are mainly composed of politicians from the USA. However, cluster 6 is composed of women whereas the other two, which are almost indistinguishable, are composed of men.
 
-An interesting point is that our clustering function really split men and women in disjoint clusters. Also, this analysis allow us to shed light on the fact that our dataset is also biased toward actors (or movie professions), journalist, politicians and athletes while the other professions are under-represented.
+An interesting point is that our clustering function really split men and women in disjoint clusters. Also, this analysis allows us to shed light on the fact that our dataset is also biased toward actors (or movie professions), journalist, politicians and athletes while the other professions are under-represented.
 
 
 
-As before, we continue by seeing if there is a cluster which contains more quotes than others. 
+As before, we continue by searching if there is a cluster which contains more quotes than others. 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/prop_clusters.html"></iframe>
 
 The first thing we can see is that cluster 4 and 6 have in general fewer quotes than any other cluster. Then, come clusters 2,3,5,7,8. Finally, cluster 0 and 1 tend to speak more about Facebook and Mark Zuckerberg. 
 
-Our second analysis is about to see if there is any cluster whose mean compound score is much higher than others. To facilitate comparisons, we order the clusters in decreasing mean compound score order. As shown in the boxplot below, we can see that the 4 first cluster have a much higher median for the compound score than the other clusters. 
+Our second analysis is about to find out if there is any cluster whose mean compound score is much higher than others. To facilitate comparisons, we order the clusters in decreasing mean compound score order. As shown in the boxplot below, we can see that the 4 first cluster have a much higher median for the compound score than the other clusters. 
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/bar_plot_proportion.html"></iframe>
 
@@ -247,13 +247,11 @@ Indeed, the number of quotes made by men is negative whereas the one for women i
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="700" allowfullscreen="true" src="figures/coeffs_gender.html"></iframe>
 
-Does the model fit well the data ? Our linear regression model reaches a R<sup>2</sup> score of 0.36. So it is able
-to capture more variance than a constant model.
+Does the model fit the data well ? Our linear regression model reaches a R<sup>2</sup> score of 0.36. So it is able to capture more variance than a constant model.
 
 #### Where do they come from ?
 
-Comparably to the analysis on genders, the plots of the stock price w.r.t. each of the features do not exhibit very clear
-trends, and we omit it here for clarity reasons.
+Comparably to the analysis on genders, the plots of the stock price w.r.t. each of the features do not exhibit very clear trends, and we omit them here for clarity reasons.
 
 Similarly to the regression on genders, the only features that matters here are the number of quotes and the negative
 score but the positive score is not relevant (not statistically significant at level 5%). Again, there is
@@ -270,7 +268,7 @@ Here we look at the different ranges of age in the authors. Namely, we consider 
 As what was done in the two previous analysis, we do not show the plots of the relationships between the features and the stock prices
 since they are very similar and do not add much insights.
  
-We don't change a winning team... it is again the count of quotes and the negative score that matter most. However,
+We don't change a winning team... these are again the count of quotes and the negative score that matter most. However,
 the positive score for the 76+ authors seems to be relevant as well. But, as surprisingly as before, the corresponding
 coefficient is negative, meaning that the more positive the quotes are for these people, the lower the stock price tends to be.
 
@@ -293,7 +291,7 @@ For this model, the R<sup>2</sup> score is 0.28, so it captures more variance in
 Similarly to what is done for the other analyses, we omit the features plots for presentations reasons.
 
 Clusters containing mainly women, such as clusters 0 and 6, tend to have a positive influence via their count coefficient.
-The count of quotes of American men however rather negative for the stock price as we can see in clusters 1 and 5. This is
+The count of quotes of American men is however rather negative for the stock price as we can see in clusters 1 and 5. This is
 what we also observed in the analyses about [continents](#where-do-they-come-from-) and [gender](#analysis-by-gender).
 
 Let's now investigate which professions are the most impactful. We could expect that professions such as economists,
