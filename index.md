@@ -310,9 +310,6 @@ to what we expected.
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="750" allowfullscreen="true" src="figures/coeffs_cluster.html"></iframe>
 
 # Conclusion
-<!--
-Answer to the question
-Limitations-->
 What have we learned about Mark Zuckerberg and his reputation? 
 First, the reviews in the newspapers are rather neutral or positive. There is still a slight average drop in the proportion of positive quotes after the Cambridge Analytica incident in 2018.  
 Second, we separated the quotes by different groups of people. We saw that young people under 25 tend to speak more positively about Mark Zuberberg and people between 51 and 75 tend to speak more negatively about him.
