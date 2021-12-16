@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Opinions in quotes and success : do they relate ?
+title: Opinions in quotes and success, do they relate ?
 subtitle: Data Story
 cover-img: /assets/img/path.jpg
 ---
