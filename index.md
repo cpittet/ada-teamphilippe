@@ -173,7 +173,7 @@ significant and how they impact his success. We see below how we can quantify th
 There are different possible ways to quantify the success of an entrepreneur. If we remain down to
 earth and do not enter philosophical discussions on what actually is success, we can imagine evaluating
 our person of interest, Mark Zuckerberg, by looking at his wealth over time. However, this is not always
-easy to do as is since we do not have transparent access to his assets, properties and their values.
+easy to do as-is since we do not have transparent access to his assets, properties and their values.
 
 
 Instead, we use a "proxy" for his wealth by considering the stock price on the Nasdaq Market for a
