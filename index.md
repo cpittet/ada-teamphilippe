@@ -1,15 +1,13 @@
 ---
-
 layout: page
 title: Opinions in quotes and success : do they relate ?
 subtitle: Data Story
-
 ---
 
 # Abstract & introduction
-<!-- An introduction about project and why it could be useful.
+An introduction about project and why it could be useful.
 Describe where the data comes from 
-One or two sentences on how to extract the data-->
+One or two sentences on how to extract the data
 
 In February 2004, at Harvard University, a student created a website allowing other students to discuss, exchange ideas, publish their best jokes. 
 This small project quickly spread to the campus, then to other universities, and finally to the whole world. This is how Mark Zuckerberg became a billionaire in a few years.
