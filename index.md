@@ -203,7 +203,7 @@ price at week n+1 as its response variable. Since the different features do not 
 is between 0 and 1 but the number of quotes may be in the hundreds), we standardize the features.
 
 
-Note that here the goal is exactly to predict very accurately the stock price of the upcoming week based
+Note that here the goal is not exactly to predict very accurately the stock price of the upcoming week based
 on the current week quotes but rather to see if there trends among certain groups that emerges. To accurately
 predict the stock prices, we would probably need more complex models as well as other features. However, more complex models
 quickly becomes less interpretable (black-box models) and this would prevent us to extract the trends
