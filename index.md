@@ -320,34 +320,11 @@ In addition, women speak more positively than men about the billionaire. When an
 We also saw that grouping data by similar demographic values can reveal differences in overall sentiments. For example, American politicians are less positive than British athletes.
 Finally, Meta's market analysis revealed that there is an inverse correlation between the number of negative quotes and the stock price. Therefore, talking negatively about someone will not necessarly make him less wealthy.
     
-<!--
-# Introduction
-## Abstract
-With the world getting more and more connected, in particular the domain of news and journalism,
-we get access to opinions of huge amount of people. These opinions can express negative, positive or
-simply neutral sentiments about a subject or person. Public personalities like Mark Zuckerberg are
-particularly exposed to criticism, being positive or negative. But do these online opinions really affect
-his success ? Opinions of specific groups of people may indicate a rise or a fall
-in his career.
-
-
-In this article, we will identify the polarity of opinions in the news and try to identify different types
-of authors. The study of the polarity of the opinions of each of these groups will then allow us to
-potentially identify specific types of people that are a good indicators of the success of Mark Zuckerberg. 
-
-## Data
-We use a subset of the [QuoteBank dataset](https://dlab.epfl.ch/people/west/pub/Vaucher-Spitz-Catasta-West_WSDM-21.pdf)
-which contains quotes made in English-speaking news articles published between 2015 and 2020. To measure the success
-of Mark Zuckerberg, we use the stock price of his company Meta on the [Nasdaq Stock Market](https://www.nasdaq.com/market-activity/stocks/fb/historical).
-
-# Sentiment Analysis
--->
 <style>
 #cursive{
   font-family:'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive;
   font-size:16px;
 }
 </style>
-
-    <p id="cursive">Robin Plumey, Alessio Verardo, Florian Constantin, Cyrille Pittet</p>
+<span id="cursive">Robin Plumey, Alessio Verardo, Florian Constantin, Cyrille Pittet</span>
 
