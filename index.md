@@ -5,7 +5,7 @@ subtitle: Data Story
 ---
 Do we put an image on the whole width behind the title ?
 ---
-# Abstract & introduction (Feez)
+# Abstract & introduction
 <!-- An introduction about project and why it could be useful.
 Describe where the data comes from 
 One or two sentences on how to extract the data-->
@@ -309,7 +309,7 @@ to what we expected.
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="750" allowfullscreen="true" src="figures/coeffs_cluster.html"></iframe>
 
-# Conclusion (Feez)
+# Conclusion
 <!--
 Answer to the question
 Limitations-->
