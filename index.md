@@ -1,10 +1,9 @@
 ---
 layout: page
-title: Opinions in News and Mark Zuckerberg success
+title: Opinions in quotes and success : do they relate ?
 subtitle: Data Story
 ---
-Do we put an image on the whole width behind the title ?
----
+
 # Abstract & introduction
 <!-- An introduction about project and why it could be useful.
 Describe where the data comes from 
@@ -319,8 +318,6 @@ Second, we separated the quotes by different groups of people. We saw that young
 In addition, women speak more positively than men about the billionaire. When analyzing where the authors of the quotes come from, we observed that Asians tend to be a bit more critical towards the American giant, while Europeans are on average more favorable.
 We also saw that grouping data by similar demographic values can reveal differences in overall sentiments. For example, American politicians are less positive than British athletes.
 Finally, Meta's market analysis revealed that there is an inverse correlation between the number of negative quotes and the stock price. Therefore, talking negatively about someone will not necessarly make him less wealthy. ---------------Je sais pas trop quoi tirer de la partie stock market ----------------
-    
----
     
 <!--
 # Introduction
