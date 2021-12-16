@@ -32,7 +32,7 @@ This corresponds to the period when the Cambridge analytica scandal was revealed
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/sentiments_category.html"></iframe>
 
-To finish with the overall observations, we noticed that the number of quotes is not consistent over time. 
+To finish with the overall inspection, we noticed that the number of quotes is not consistent over time. 
 The first observation is this high spike in early 2018.
 As already explained earlier, that's when the Cambridge Analytica scandal exploded in the media, therefore it makes sense than the number of quotes is also scaling up.
 There are also a few weeks with very few quotes from the source used to harvest the data.
@@ -41,7 +41,7 @@ There are also a few weeks with very few quotes from the source used to harvest 
 
 ## Clustering 
 
-As already explained in the [sentiment analysis](#sentiment_global) when looking at the mean compound score, considering the sentiments of all the people talking about Mark Zuckerberg simultaneously doesn't give much information. 
+As already explained in the [sentiment analysis](#sentiment_global) part, when looking at the mean compound score, considering the sentiments of all the people talking about Mark Zuckerberg simultaneously doesn't give much information. 
 
 To overcome this problem, we thought that it might be interesting to split the people into different clusters, based on different personal characteristics, to see if we can spot any trend where a group of people always talks positively or negatively about Mark Zuckerberg or Facebook. 
 
