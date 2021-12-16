@@ -191,7 +191,7 @@ stock price. It increases steadily from 2015 until the beginning of 2018. Around
 This corresponds to the period where the Cambridge Analytica scandal with Facebook exploded. So this verifies
 that the stock market is reactive to external events as we said above.
 
-![Stock price](stock_price.png)
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/stocks_by_period.html"></iframe>
 
 To relate the opinions of different groups in the news with the stock prices, we will use a simple linear regression,
 where the inputs are the different polarity scores and the output is the stock price.
