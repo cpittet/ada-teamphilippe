@@ -286,7 +286,7 @@ Indeed, the coefficient for the count of quotes by young people (0-25) is negati
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="600" allowfullscreen="true" src="figures/coeffs_age.html"></iframe>
 
-For this model, the $R^2$ score is 0.28, so it captures more variance in the data than the constant model.
+For this model, the R<sup>2</sup> score is 0.28, so it captures more variance in the data than the constant model.
 
 #### Who are they ?
 
