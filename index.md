@@ -134,7 +134,7 @@ function setDisplayNone(id){
 From the above plots, we can see that our clustering works well and the clusters are almost all interpretable. Using the above decomposition of each cluster, we can make the following comments.
 In cluster 0, we can observe that it is almost exclusively composed of women which have movie and television related profession (actress and model) coming from the United States of America. 
 In cluster 1, we got athletes men from the United States. Athletes from various sports from the United Kingdom populate cluster 2. In cluster 3, we can see that most of the quoters are men with cinema related professions from the USA and also a bit from India.
-Cluster 4 is perhaps the less interpretable cluster but it gathers men from the United Kingdom in majority. Cluster 5 groups mainly people with a writing related profession such as writer, screenwriter or jouranlist, coming from America. 
+Cluster 4 is perhaps the less interpretable cluster but it gathers men from the United Kingdom in majority. Cluster 5 groups mainly people with a writing related profession such as writer, screenwriter or journalist, coming from America. 
 The three last clusters are mainly composed of politicians from the USA. However, cluster 6 is composed of women whereas the other two, which are almost indistinguishable, are composed of men.
 
 Our interesting point is that our clustering function really split men and women in disjoint clusters. Also, this analysis allow us to shed light on the fact that our dataset is also biased toward actors (or movie professions), journalist, politicians and athletes while the other professions are under-represented.
