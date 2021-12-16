@@ -323,6 +323,9 @@ Finally, Meta's market analysis revealed that there is an inverse correlation be
   font-size:24px;
   text-align:center;
 }
+ .avatar-img{
+    background-color:rgb(234,234,234);
+   }
 </style>
 <span id="cursive">Robin Plumey, Alessio Verardo, Florian Constantin, Cyrille Pittet</span>
 
