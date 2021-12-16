@@ -5,10 +5,7 @@ subtitle: Data Story
 cover-img: https://upload.wikimedia.org/wikipedia/commons/3/3d/Mark_Zuckerberg_F8_2018_Keynote_%2841793468182%29.jpg
 ---
 
-# Abstract & introduction
-An introduction about project and why it could be useful.
-Describe where the data comes from 
-One or two sentences on how to extract the data
+# Introduction
 
 In February 2004, at Harvard University, a student created a website allowing other students to discuss, exchange ideas, publish their best jokes. 
 This small project quickly spread to the campus, then to other universities, and finally to the whole world. This is how Mark Zuckerberg became a billionaire in a few years.
