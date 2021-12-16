@@ -26,14 +26,13 @@ author: TeamPhilippe
 navbar-links:
   Resources:
     - GitHub repository: "https://github.com/epfl-ada/ada-2021-project-teamphilippe"
-    - Licences:
-      - Background: Anthony Quintano from Honolulu, HI, United States, CC BY 2.0 <https://creativecommons.org/licenses/by/2.0>, via Wikimedia Commons
+    - Image Licence: Anthony Quintano from Honolulu, HI, United States, CC BY 2.0 <https://creativecommons.org/licenses/by/2.0>, via Wikimedia Commons
 
 # --- Logo --- #
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "https://i1.wp.com/ownacademy.co/wp-content/uploads/2018/10/facebook-logo-circle-transparent.png?ssl=1"
+#avatar: 
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
