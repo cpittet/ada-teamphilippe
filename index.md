@@ -72,7 +72,7 @@ By looking at the mean compound score, the first thing that stands out is that t
 
 
 #### Clustering based on continent<a name="cluster_continent"></a>
-Do the Europeans tend to speak more positively than the Americans ? Or maybe, does the Asians have a tendency to give a more negative opinion about Mark Zuckerberg and/or Facebook ? That's the kind of questions we will try to answer by clustering people with respect to their continents. As before, let us start by inspecting the number of data we have for each continent. 
+Do the Europeans tend to speak more positively than the Americans ? Or maybe, do the Asians have a tendency to give a more negative opinion about Mark Zuckerberg and/or Facebook ? That's the kind of questions we will try to answer by clustering people with respect to their continents. As before, let us start by inspecting the number of data we have for each continent. 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/cont_prop.html"></iframe>
 It is absolutely not surprising to see that Americans gather almost 60% of the quotes at any time  since, as explained in the introduction, the data mostly comes from American newspapers which are more likely to speak about the actuality of their country. 
 
