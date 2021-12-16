@@ -342,7 +342,12 @@ of Mark Zuckerberg, we use the stock price of his company Meta on the [Nasdaq St
 
 # Sentiment Analysis
 -->
+<style>
+#cursive{
+  font-family:'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive;
+  font-size:16px;
+}
+</style>
 
-
-Robin Plumey, Alessio Verardo, Florian Constantin, Cyrille Pittet
+    <p id="cursive">Robin Plumey, Alessio Verardo, Florian Constantin, Cyrille Pittet</p>
 
