@@ -84,14 +84,14 @@ In terms of mean compound score, we can see that there is no continent which see
 From the last plot, we can see that the above intuition about Asia is confirmed as they have a mean compound score statistically lower than the other continents. From this plot, we can also see that the European have spoken statistically more positively about Facebook and Mark than the others over the 5 years of news articles spanned by Quotebank. 
 
 #### Clustering<a name="cluster_cluster"></a>
-Our final try is to let a clustering algorithm run and see if, based only on peoples' demographic attributes, it can create clusters grouping people talking mostly positively or negatively about Mark or Facebook in the quotes. To do so, the clustering algorithm will use demographic attributes associated to the quoter. These informations were collected from Wikidata. To be more precise, in order to compute the distance between two quoters, we use their age, nationality, profession, religion and gender. The other attributes collected from Wikidata were not set in enough quoter to be able to use them. As there was a lot of quoters, we choose to oblige all the attributes to be set so that we can get a more meaniningful distance as well as reducing the number of quoters we need to process.
+Our final try is to let a clustering algorithm run and see if, based only on peoples' demographic attributes, it can create clusters grouping people talking mostly positively or negatively about Mark or Facebook in the quotes. To do so, the clustering algorithm will use demographic attributes associated to the quoter. These information were collected from Wikidata. To be more precise, in order to compute the distance between two quoters, we use their age, nationality, profession, religion and gender. The other attributes collected from Wikidata were not set in enough quoter to be able to use them. As there was a lot of quoters, we choose to oblige all the attributes to be set so that we can get a more meaniningful distance as well as reducing the number of quoters we need to process.
 
-Finally, we force each clusters to contain at least 2'000 people so that the size of each cluster is large enough for our subsequent analyses to be valuable. The total number of clusters found by the algorithm is 9. 
+Finally, we force each cluster to contain at least 2'000 persons so that the size of each cluster is large enough for our subsequent analyses to be valuable. The total number of clusters found by the algorithm is 9. 
 
 Earlier in this article, we saw gender and continent characteristics at a quote level, i.e. we inspect the distribution of the quotes by continent and gender but at the quote level. Here, we change our vision and we rather look at them from a person persepective. 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="700" allowfullscreen="true" src="figures/global_distribution.html"></iframe>
-In the plot, we can see the different distribution of the attributes of the quoters of Mark Zuckerberg. We choose to only display the first 5 nationalities and occupations as the other ones group a tiny percentages of the population. 
-From the above plot, we can see the most represented professions in the datasets are actor (6.22%) and politicians (7.05%). Furthermore, as already mentioned, most of the quoter comes from the United States and therefore from America which explain the two large percentages we got in the nationality and continent pie charts. 
+In the plot, we can see the different distributions of the attributes of the quoters of Mark Zuckerberg. We choose to only display the first 5 nationalities and occupations as the other ones group a tiny percentages of the population. 
+From the above plot, we can see that the most represented professions in the datasets are actors (6.22%) and politicians (7.05%). Furthermore, as already mentioned, most of the quoter comes from the United States and therefore from America which explain the two large percentages we got in the nationality and continent pie charts. 
 We can also see that the second nationality in terms of number of quoters is the United Kingdom which explains such a high score for the Europeans. As already mentioned in this article, the number of men is much higher than the number of women.
 
 Let's now look in deeper details about which type of person is contained in each cluster. (Note that using the dropdown, you are able to explore each cluster)
@@ -120,7 +120,7 @@ Let's now look in deeper details about which type of person is contained in each
 <iframe frameborder="no" border="0" marginwidth="0" onload="setDisplayNone('8')" id="cluster8" marginheight="0" width="100%" height="700" allowfullscreen="true" src="figures/cluster_distribution_8.html"></iframe>
 <script>
 function checkDisplay(sel) {
-    for(var i=0; i<8;i++){
+    for(var i=0; i<=8;i++){
         document.getElementById("cluster"+i).style.display="none";
     }
     document.getElementById("cluster"+sel.value).style.display="block"
