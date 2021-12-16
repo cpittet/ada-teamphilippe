@@ -235,7 +235,7 @@ others such as the number of quotes made by women seem to exhibit a slight linea
 
 To find more accurate insights about these possible trends, consider the coefficients obtained 
 with a linear regression taking as input all the 6 features above and as output the (delayed) average stock price.
-The statistically significant coefficients at level 5% are shown in color, the others in gray. Over the 6 features,
+The statistically significant coefficients at level 5% are shown below in color, the others in gray. Over the 6 features,
 only 3 are statistically significant at level 5%. You probably imagine that if people are speaking favorably then this would
 have a positive effect on the stock price and vice-versa. But surprisingly, the coefficient associated to the negative
 sentiment for the men is positive. This means that the more negative the men quotes are the higher the stock prices
@@ -245,7 +245,7 @@ they do not contain much information. However, since the pessimistic quotes are 
 Women quotes are a good sign for the price whereas the number of men quotes is a bad omen for the stock price.
 Indeed, the number of quotes made by men is negative whereas the one for women is positive.
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/coeffs_gender.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="700" allowfullscreen="true" src="figures/coeffs_gender.html"></iframe>
 
 Does the model fit well the data ? Our linear regression model reaches a R<sup>2</sup> score of 0.36. So it is able
 to capture more variance than a constant model.
