@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Opinions in quotes and success, do they relate ?
 subtitle: Data Story
 cover-img: /assets/img/path.jpg
@@ -344,5 +344,5 @@ of Mark Zuckerberg, we use the stock price of his company Meta on the [Nasdaq St
 -->
 
 
-
+Robin Plumey, Alessio Verardo, Florian Constantin, Cyrille Pittet
 
