@@ -1,6 +1,6 @@
 ---
 layout: page
-title: <br><br><br><br>Opinions in quotes and success, do they relate ?
+title: <br><br><br>Opinions in quotes and success, do they relate ?
 subtitle: Data Story
 cover-img: https://upload.wikimedia.org/wikipedia/commons/3/3d/Mark_Zuckerberg_F8_2018_Keynote_%2841793468182%29.jpg
 ---
