@@ -247,7 +247,7 @@ Indeed, the number of quotes made by men is negative whereas the one for women i
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/coeffs_gender.html"></iframe>
 
-Does the model fit well the data ? Our linear regression model reaches a $R^2$ score of 0.36. So it is able
+Does the model fit well the data ? Our linear regression model reaches a R<sup>2</sup> score of 0.36. So it is able
 to capture more variance than a constant model.
 
 #### Where do they come from ?
@@ -262,7 +262,7 @@ the price tend to be whereas the more quotes there are in Europe or Asia, the hi
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="600" allowfullscreen="true" src="figures/coeffs_continent.html"></iframe>
 
-As before, this fit has a $R^2$ score of 0.33.
+As before, this fit has a R<sup>2</sup> score of 0.33.
 
 #### How old are they ? 
 
