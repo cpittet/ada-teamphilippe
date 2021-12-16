@@ -5,7 +5,6 @@ subtitle: Data Story
 ---
 Do we put an image on the whole width behind the title ?
 ---
-# Skeleton
 # Abstract & introduction (Feez)
 <!-- An introduction about project and why it could be useful.
 Describe where the data comes from 
@@ -21,7 +20,10 @@ In this article, we will analyze quotes from 2015 to 2020 from the Quotebank dat
 Next, we will profile the types of people issuing these quotes and analyze their tendencies to speak kindly or unfavorably about Mark Zuckerberg.
 Finally, for each of these people categories, we will determine if the impact of these positive and negative reviews is significant on Facebook's stock numbers over time.
 
-# Sentiment analysis<a name="sentiment"></a>
+## Data
+We use the subset of quotes talking about Mark Zuckerberg and his companies from the [QuoteBank dataset](https://dlab.epfl.ch/people/west/pub/Vaucher-Spitz-Catasta-West_WSDM-21.pdf) which contains quotes made in English-speaking news articles published between 2015 and 2020. These quotes are coupled with a dump of [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page) containing information about their author. To measure the success of Mark Zuckerberg, we use the stock price of his company Meta on the [Nasdaq Stock Market](https://www.nasdaq.com/market-activity/stocks/fb/historical) during the same period.
+# Sentiment analysis<a name="sentiment_global"></a>
+
 ## Global result <a name="sentiment_global"></a>
 To assign a sentiment to each quote, we first use a pre-existing sentiment analyser that will output a score, referred to as the **compound score**, in the [-1,1] interval. If the score is close to 1, it means that the quote conveys a very positive sentiment whereas a score close to -1 indicates a very negative meaning.
 Therefore, we assign a sentiment label to each quote by thresholding the compound score. 
@@ -308,9 +310,19 @@ to what we expected.
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="750" allowfullscreen="true" src="figures/coeffs_cluster.html"></iframe>
 
 # Conclusion (Feez)
+<!--
 Answer to the question
-Limitations
+Limitations-->
+What have we learned about Mark Zuckerberg and his reputation? 
+First, the reviews in the newspapers are rather neutral or positive. There is still a slight average drop in the proportion of positive quotes after the Cambridge Analytica incident in 2018.  
+Second, we separated the quotes by different groups of people. We saw that young people under 25 tend to speak more positively about Mark Zuberberg and people between 51 and 75 tend to speak more negatively about him.
+In addition, women speak more positively than men about the billionaire. When analyzing where the authors of the quotes come from, we observed that Asians tend to be a bit more critical towards the American giant, while Europeans are on average more favorable.
+We also saw that grouping data by similar demographic values can reveal differences in overall sentiments. For example, American politicians are less positive than British athletes.
+Finally, Meta's market analysis revealed that there is an inverse correlation between the number of negative quotes and the stock price. Therefore, talking negatively about someone will not necessarly make him less wealthy. ---------------Je sais pas trop quoi tirer de la partie stock market ----------------
+    
 ---
+    
+<!--
 # Introduction
 ## Abstract
 With the world getting more and more connected, in particular the domain of news and journalism,
@@ -331,7 +343,7 @@ which contains quotes made in English-speaking news articles published between 2
 of Mark Zuckerberg, we use the stock price of his company Meta on the [Nasdaq Stock Market](https://www.nasdaq.com/market-activity/stocks/fb/historical).
 
 # Sentiment Analysis
-
+-->
 
 
 
