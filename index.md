@@ -309,7 +309,7 @@ to what we expected.
 # Conclusion
 What have we learned about Mark Zuckerberg and his reputation? 
 First, the reviews in the newspapers are rather neutral or positive. There is still a slight average drop in the proportion of positive quotes after the Cambridge Analytica incident in 2018.  
-Second, we separated the quotes by different groups of people. We saw that young people under 25 tend to speak more positively about Mark Zuberberg and people between 51 and 75 tend to speak more negatively about him.
+Second, we separated the quotes by different groups of people. We saw that young people under 25 tend to speak more positively about Mark Zuckerberg and people between 51 and 75 tend to speak more negatively about him.
 In addition, women speak more positively than men about the billionaire. When analyzing where the authors of the quotes come from, we observed that Asians tend to be a bit more critical towards the American giant, while Europeans are on average more favorable.
 We also saw that grouping data by similar demographic values can reveal differences in overall sentiments. For example, American politicians are less positive than British athletes.
 Finally, Meta's market analysis revealed that there is an inverse correlation between the number of negative quotes and the stock price. Therefore, talking negatively about someone will not necessarly make him less wealthy.
