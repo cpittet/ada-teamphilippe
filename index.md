@@ -80,7 +80,7 @@ After the Americans, come the Europeans with around 20% of the quotes. An intere
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/cont_mean.html"></iframe><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" allowfullscreen="true" src="figures/cont_box.html"></iframe>
 
-In terms of mean compound score, we can see that there is no continent which seems to be always more positive than the others. The spikes we can see in the plot is only caused by one quote which means that we cannot conclude anything interesting. On the other hand, over the whole period of time, it seems that Asia speaks a bit more negatively about Mark and Facebook.
+In terms of mean compound score, we can see that there is no continent which seems to be always more positive than the others. The spikes we can see in the plot are only caused by one quote which means that we cannot conclude anything interesting. On the other hand, over the whole period of time, it seems that Asia speaks a bit more negatively about Mark and Facebook.
 From the last plot, we can see that the above intuition about Asia is confirmed as they have a mean compound score statistically lower than the other continents. From this plot, we can also see that the European have spoken statistically more positively about Facebook and Mark than the others over the 5 years of news articles spanned by Quotebank. 
 
 #### Clustering<a name="cluster_cluster"></a>
