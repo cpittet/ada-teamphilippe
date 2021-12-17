@@ -258,7 +258,7 @@ score but the positive score is not relevant (not statistically significant at l
 some contrast between the number of quotes in different groups. The more American quotes there is, the lower 
 the price tend to be whereas the more quotes there are in Europe or Asia, the higher the price is likely to be.
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="600" allowfullscreen="true" src="figures/coeffs_continent.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="700" allowfullscreen="true" src="figures/coeffs_continent.html"></iframe>
 
 As before, this fit has a R<sup>2</sup> score of 0.33.
 
@@ -282,7 +282,7 @@ A contrast in the count of quotes also emerges. Young people seem to be more cri
 Indeed, the coefficient for the count of quotes by young people (0-25) is negative whereas the one for the older people
 (76+) is positive. This is in concordance with our previous [analysis](#cluser_ages).
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="600" allowfullscreen="true" src="figures/coeffs_age.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="700" allowfullscreen="true" src="figures/coeffs_age.html"></iframe>
 
 For this model, the R<sup>2</sup> score is 0.28, so it captures more variance in the data than the constant model.
 
